@@ -102,7 +102,7 @@ target_include_directories(ppgso PUBLIC
 #
 
 # Playground target
-add_executable(playground src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h src/playground/constants.h src/playground/cube.cpp src/playground/cube.h)
+add_executable(playground src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h src/playground/cube.cpp src/playground/cube.h)
 target_link_libraries(playground ppgso shaders)
 install (TARGETS playground DESTINATION .)
 

@@ -2,8 +2,7 @@
 // - You can use this template project for quick C++ experiments
 
 #include <iostream>
-#include <src/playground/gamewindow.h>
-
+#include "gamewindow.h"
 
 using namespace std;
 

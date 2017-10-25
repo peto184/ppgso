@@ -5,24 +5,25 @@
 #ifndef PPGSO_CUBE_H
 #define PPGSO_CUBE_H
 
-
+#include <ppgso.h>
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
-#include <shader.h>
-#include <mesh.h>
 
 class Cube {
 private:
-    ppgso::Texture cubeTexture = ppgso::Texture(0, 0);
-    ppgso::Mesh mesh = ppgso::Mesh("cube.obj");
+
 
 public:
+    std::unique_ptr<ppgso::Mesh> mMesh;
+    std::unique_ptr<ppgso::Shader> mShader;
+    std::unique_ptr<ppgso::Texture> mTexture;
 
-    glm::mat4 modelMatrix;
+    glm::vec3 mPosition{0,0,0};
+    glm::vec3 mRotation{0,0,0};
+    glm::vec3 mScale{1,1,1};
+    glm::mat4 mModelMatrix{1};
 
-    Cube(ppgso::Texture cubeTexture, ppgso::Mesh mesh);
-    ppgso::Texture getTexture();
-    ppgso::Mesh getMesh();
+    Cube();
 };
 
 

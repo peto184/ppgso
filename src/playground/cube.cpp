@@ -4,15 +4,13 @@
 
 #include "cube.h"
 
-Cube::Cube(ppgso::Texture cubeTexture, ppgso::Mesh mesh) {
-    this->cubeTexture = cubeTexture;
-    this->mesh = mesh;
-}
+std::unique_ptr<ppgso::Mesh> mMesh;
+std::unique_ptr<ppgso::Shader> mShader;
+std::unique_ptr<ppgso::Texture> mTexture;
 
-ppgso::Texture Cube::getTexture() {
-    return cubeTexture;
-}
-
-ppgso::Mesh Cube::getMesh() {
-    return mesh;
+Cube::Cube() {
+    // Initialize static resources if needed
+    if (!mShader) mShader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
+    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("sphere.bmp"));
+    if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("cube.obj");
 }

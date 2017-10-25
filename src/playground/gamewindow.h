@@ -9,7 +9,6 @@
 #include <ppgso/ppgso.h>
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
-#include "constants.h"
 #include "cube.h"
 
 #include <glm/gtx/matrix_transform_2d.hpp>
@@ -21,14 +20,14 @@ using namespace std;
 
 class GameWindow : public Window {
 public:
-
-    Cube cube = Cube(ppgso::Texture(image::loadBMP("sphere.bmp")), ppgso::Mesh("cube.obj"));
+    static const unsigned int GAME_WINDOW_WIDTH = 1280;
+    static const unsigned int GAME_WINDOW_HEIGHT = 1024;
 
     vector<Cube> cube_vector;
 
     Shader program = {texture_vert_glsl, texture_frag_glsl};
 
-    explicit GameWindow(const std::string &title = GAME_TITLE_NAME,
+    explicit GameWindow(const std::string &title = "Super Mario",
                unsigned int width = GAME_WINDOW_WIDTH,
                unsigned int height = GAME_WINDOW_HEIGHT);
 

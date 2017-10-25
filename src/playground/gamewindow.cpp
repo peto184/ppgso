@@ -3,15 +3,12 @@
 //
 
 #include "gamewindow.h"
-#include "cube.h"
 
 using namespace glm;
 using namespace std;
 
 GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned int height)
         : Window(title, width, height) {
-
-    hideCursor();
 
     // Enable Z-Buffer
     glEnable(GL_DEPTH_TEST);
@@ -24,7 +21,7 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
 
     // insert the cubes
     for (int i = 0; i < 5; i++){
-        cube_vector.emplace_back(Cube(ppgso::Texture(image::loadBMP("sphere.bmp")), ppgso::Mesh("cube.obj")));
+        cube_vector.emplace_back(Cube());
     }
 
 }
@@ -38,12 +35,14 @@ void GameWindow::onIdle() {
     auto time = (float) glfwGetTime();
 
     for (int i = 0; i < cube_vector.size(); i++){
-        Cube c = cube_vector.at(i);
-        c.modelMatrix = rotate(mat4{}, time, {0.0f, 0.5f * pow(-1.0, i), 0.0f});
-        c.modelMatrix = translate(c.modelMatrix, {0.0, 0.0, float(i)});
-        program.setUniform("Texture", c.getTexture());
-        program.setUniform("ModelMatrix", c.modelMatrix);
-        c.getMesh().render();
+        Cube& c = cube_vector.at(i);
+        c.mModelMatrix = rotate(mat4{}, time, {0.0f, 0.5f * pow(-1.0, i), 0.0f});
+        c.mModelMatrix = translate(c.mModelMatrix, {0.0, 0.0, float(i)});
+        program.setUniform("Texture", *(c.mTexture));
+        program.setUniform("ModelMatrix", c.mModelMatrix);
+
+        Mesh &m = *(c.mMesh);
+        m.render();
     }
 
     // create object matrices
