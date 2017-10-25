@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\peto1_000\Desktop\projekt_ppgso
+CMAKE_SOURCE_DIR = C:\Users\peter\Desktop\projekt_ppgso
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ppgso.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj: ../ppgso/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\mesh.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\mesh.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\mesh.cpp
 
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/mesh.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\mesh.cpp > CMakeFiles\ppgso.dir\ppgso\mesh.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\mesh.cpp > CMakeFiles\ppgso.dir\ppgso\mesh.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/mesh.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\mesh.cpp -o CMakeFiles\ppgso.dir\ppgso\mesh.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\mesh.cpp -o CMakeFiles\ppgso.dir\ppgso\mesh.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj.provides.build: CMakeFiles/ppgso.dir/ppg
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj: ../ppgso/tiny_obj_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp > CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp > CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\tiny_obj_loader.cpp -o CMakeFiles\ppgso.dir\ppgso\tiny_obj_loader.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj.requires:
 
@@ -109,16 +109,16 @@ CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj.provides.build: CMakeFiles/pp
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj: ../ppgso/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\shader.cpp
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/shader.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\shader.cpp > CMakeFiles\ppgso.dir\ppgso\shader.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\shader.cpp > CMakeFiles\ppgso.dir\ppgso\shader.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/shader.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\shader.cpp -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\shader.cpp -o CMakeFiles\ppgso.dir\ppgso\shader.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj.requires:
 
@@ -134,16 +134,16 @@ CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj.provides.build: CMakeFiles/ppgso.dir/p
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj: ../ppgso/image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\image.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image.cpp > CMakeFiles\ppgso.dir\ppgso\image.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\image.cpp > CMakeFiles\ppgso.dir\ppgso\image.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image.cpp -o CMakeFiles\ppgso.dir\ppgso\image.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\image.cpp -o CMakeFiles\ppgso.dir\ppgso\image.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image.cpp.obj.requires:
 
@@ -159,16 +159,16 @@ CMakeFiles/ppgso.dir/ppgso/image.cpp.obj.provides.build: CMakeFiles/ppgso.dir/pp
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj: ../ppgso/image_bmp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_bmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_bmp.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_bmp.cpp > CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_bmp.cpp > CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_bmp.cpp -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_bmp.cpp -o CMakeFiles\ppgso.dir\ppgso\image_bmp.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj.requires:
 
@@ -184,16 +184,16 @@ CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj.provides.build: CMakeFiles/ppgso.di
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj: ../ppgso/image_raw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_raw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_raw.cpp
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_raw.cpp > CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_raw.cpp > CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\image_raw.cpp -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\image_raw.cpp -o CMakeFiles\ppgso.dir\ppgso\image_raw.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj.requires:
 
@@ -209,16 +209,16 @@ CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj.provides.build: CMakeFiles/ppgso.di
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj: ../ppgso/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\texture.cpp
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/texture.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\texture.cpp > CMakeFiles\ppgso.dir\ppgso\texture.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\texture.cpp > CMakeFiles\ppgso.dir\ppgso\texture.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/texture.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\texture.cpp -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\texture.cpp -o CMakeFiles\ppgso.dir\ppgso\texture.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj.requires:
 
@@ -234,16 +234,16 @@ CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj.provides.build: CMakeFiles/ppgso.dir/
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CMakeFiles/ppgso.dir/flags.make
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: CMakeFiles/ppgso.dir/includes_CXX.rsp
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj: ../ppgso/window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\window.cpp.obj -c C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ppgso.dir\ppgso\window.cpp.obj -c C:\Users\peter\Desktop\projekt_ppgso\ppgso\window.cpp
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/ppgso/window.cpp.i"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\window.cpp > CMakeFiles\ppgso.dir\ppgso\window.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\peter\Desktop\projekt_ppgso\ppgso\window.cpp > CMakeFiles\ppgso.dir\ppgso\window.cpp.i
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/window.cpp.s"
-	E:\mingw-w64\x86_64-7.1.0-posix-seh-rt_v5-rev2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peto1_000\Desktop\projekt_ppgso\ppgso\window.cpp -o CMakeFiles\ppgso.dir\ppgso\window.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\peter\Desktop\projekt_ppgso\ppgso\window.cpp -o CMakeFiles\ppgso.dir\ppgso\window.cpp.s
 
 CMakeFiles/ppgso.dir/ppgso/window.cpp.obj.requires:
 
@@ -280,7 +280,7 @@ libppgso.a: CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/window.cpp.obj
 libppgso.a: CMakeFiles/ppgso.dir/build.make
 libppgso.a: CMakeFiles/ppgso.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libppgso.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libppgso.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\ppgso.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ppgso.dir\link.txt --verbose=$(VERBOSE)
 
@@ -305,6 +305,6 @@ CMakeFiles/ppgso.dir/clean:
 .PHONY : CMakeFiles/ppgso.dir/clean
 
 CMakeFiles/ppgso.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\peto1_000\Desktop\projekt_ppgso C:\Users\peto1_000\Desktop\projekt_ppgso C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug C:\Users\peto1_000\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles\ppgso.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\peter\Desktop\projekt_ppgso C:\Users\peter\Desktop\projekt_ppgso C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug C:\Users\peter\Desktop\projekt_ppgso\cmake-build-debug\CMakeFiles\ppgso.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ppgso.dir/depend
 

@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_raw.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_raw.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/mesh.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/shader.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/texture.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/window.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

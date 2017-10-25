@@ -12,12 +12,19 @@
 #include "constants.h"
 #include "cube.h"
 
+#include <glm/gtx/matrix_transform_2d.hpp>
+#include <glm/gtx/euler_angles.hpp>
+#include <iostream>
+
 using namespace ppgso;
+using namespace std;
 
 class GameWindow : public Window {
 public:
 
     Cube cube = Cube(ppgso::Texture(image::loadBMP("sphere.bmp")), ppgso::Mesh("cube.obj"));
+
+    vector<Cube> cube_vector;
 
     Shader program = {texture_vert_glsl, texture_frag_glsl};
 

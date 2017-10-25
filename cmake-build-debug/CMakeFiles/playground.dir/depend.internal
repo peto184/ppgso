@@ -111,8 +111,8 @@ CMakeFiles/playground.dir/src/playground/cube.cpp.obj
  ../ppgso/shader.h
  ../ppgso/texture.h
  ../ppgso/tiny_obj_loader.h
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.cpp
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.h
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.cpp
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.h
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj
  ..//cmake-build-debug/shaders/texture_frag_glsl.h
  ..//cmake-build-debug/shaders/texture_vert_glsl.h
@@ -201,6 +201,10 @@ CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj
  ../dependencies/include/glm/gtc/type_ptr.inl
  ../dependencies/include/glm/gtx/compatibility.hpp
  ../dependencies/include/glm/gtx/compatibility.inl
+ ../dependencies/include/glm/gtx/euler_angles.hpp
+ ../dependencies/include/glm/gtx/euler_angles.inl
+ ../dependencies/include/glm/gtx/matrix_transform_2d.hpp
+ ../dependencies/include/glm/gtx/matrix_transform_2d.inl
  ../dependencies/include/glm/integer.hpp
  ../dependencies/include/glm/mat2x2.hpp
  ../dependencies/include/glm/mat2x3.hpp
@@ -232,10 +236,10 @@ CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj
  ../ppgso/texture.h
  ../ppgso/tiny_obj_loader.h
  ../ppgso/window.h
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/constants.h
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.h
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/gamewindow.cpp
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/gamewindow.h
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/constants.h
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.h
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/gamewindow.cpp
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/gamewindow.h
 CMakeFiles/playground.dir/src/playground/main.cpp.obj
  ..//cmake-build-debug/shaders/texture_frag_glsl.h
  ..//cmake-build-debug/shaders/texture_vert_glsl.h
@@ -325,6 +329,10 @@ CMakeFiles/playground.dir/src/playground/main.cpp.obj
  ../dependencies/include/glm/gtc/type_ptr.inl
  ../dependencies/include/glm/gtx/compatibility.hpp
  ../dependencies/include/glm/gtx/compatibility.inl
+ ../dependencies/include/glm/gtx/euler_angles.hpp
+ ../dependencies/include/glm/gtx/euler_angles.inl
+ ../dependencies/include/glm/gtx/matrix_transform_2d.hpp
+ ../dependencies/include/glm/gtx/matrix_transform_2d.inl
  ../dependencies/include/glm/integer.hpp
  ../dependencies/include/glm/mat2x2.hpp
  ../dependencies/include/glm/mat2x3.hpp
@@ -358,4 +366,4 @@ CMakeFiles/playground.dir/src/playground/main.cpp.obj
  ../ppgso/window.h
  ../src/playground/constants.h
  ../src/playground/cube.h
- C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/main.cpp
+ C:/Users/peter/Desktop/projekt_ppgso/src/playground/main.cpp

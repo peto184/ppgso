@@ -8,376 +8,376 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="shaders">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="shaders/fast">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders/fast"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ppgso">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLM_FORCE_RADIANS"/>
 					<Add option="-DGLEW_STATIC"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/dependencies/include"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/dependencies/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ppgso/fast">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLM_FORCE_RADIANS"/>
 					<Add option="-DGLEW_STATIC"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/dependencies/include"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/dependencies/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso/fast"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="playground">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/playground.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/playground.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLM_FORCE_RADIANS"/>
 					<Add option="-DGLEW_STATIC"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/dependencies/include"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/dependencies/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="playground/fast">
-				<Option output="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/playground.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option output="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/playground.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLM_FORCE_RADIANS"/>
 					<Add option="-DGLEW_STATIC"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/dependencies/include"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso"/>
-					<Add directory="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
-					<Add directory="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/dependencies/include"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso"/>
+					<Add directory="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground/fast"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 playground/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug"/>
+				<Option working_dir="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_frag_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/color_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_frag_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/convolution_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_frag_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/diffuse_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_frag_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.cpp.rule">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/shaders/texture_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_raw.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_raw.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_raw.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_raw.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.cpp">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.h">
 			<Option target="ppgso"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/constants.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/constants.h">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.cpp">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.h">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/gamewindow.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/gamewindow.cpp">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/gamewindow.h">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/gamewindow.h">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/main.cpp">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/src/playground/main.cpp">
 			<Option target="playground"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/CMakeLists.txt">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake/add_resources.cmake">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake/add_resources.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake/FindGLFW3.cmake">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake/FindGLFW3.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/peto1_000/Desktop/projekt_ppgso/cmake/FindGLM.cmake">
+		<Unit filename="C:/Users/peter/Desktop/projekt_ppgso/cmake/FindGLM.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 	</Project>

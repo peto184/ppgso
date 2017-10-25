@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/cube.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/cube.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/gamewindow.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/src/playground/main.cpp" "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/main.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/src/playground/cube.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/cube.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/src/playground/gamewindow.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj"
+  "C:/Users/peter/Desktop/projekt_ppgso/src/playground/main.cpp" "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/playground.dir/src/playground/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -26,8 +26,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/DependInfo.cmake"
-  "C:/Users/peto1_000/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/shaders.dir/DependInfo.cmake"
+  "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/ppgso.dir/DependInfo.cmake"
+  "C:/Users/peter/Desktop/projekt_ppgso/cmake-build-debug/CMakeFiles/shaders.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

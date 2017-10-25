@@ -200,6 +200,10 @@ CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/inc
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtc/type_ptr.inl
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/compatibility.hpp
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/compatibility.inl
+CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/euler_angles.hpp
+CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/euler_angles.inl
+CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/matrix_transform_2d.hpp
+CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/gtx/matrix_transform_2d.inl
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/integer.hpp
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/mat2x2.hpp
 CMakeFiles/playground.dir/src/playground/gamewindow.cpp.obj: ../dependencies/include/glm/mat2x3.hpp
@@ -324,6 +328,10 @@ CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/g
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtc/type_ptr.inl
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/compatibility.hpp
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/compatibility.inl
+CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/euler_angles.hpp
+CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/euler_angles.inl
+CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/matrix_transform_2d.hpp
+CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/gtx/matrix_transform_2d.inl
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/integer.hpp
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/mat2x2.hpp
 CMakeFiles/playground.dir/src/playground/main.cpp.obj: ../dependencies/include/glm/mat2x3.hpp

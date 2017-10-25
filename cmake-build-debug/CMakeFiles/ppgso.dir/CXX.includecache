@@ -860,11 +860,11 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../dependencies/include/glm/detail/func_vector_relational.hpp
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.cpp
 image.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h
 string
 -
 vector
@@ -874,7 +874,7 @@ memory
 fstream
 -
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.cpp
 iostream
 -
 fstream
@@ -882,29 +882,29 @@ fstream
 sstream
 -
 image_bmp.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_bmp.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_bmp.h
 image.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image_raw.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image_raw.cpp
 fstream
 -
 sstream
 -
 image.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.cpp
 glm/glm.hpp
 -
 sstream
 -
 mesh.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/mesh.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/mesh.h
 iostream
 -
 vector
@@ -922,13 +922,13 @@ glm/gtc/matrix_transform.hpp
 glm/gtc/type_ptr.hpp
 -
 shader.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.h
 texture.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h
 tiny_obj_loader.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.cpp
 iostream
 -
 sstream
@@ -940,11 +940,11 @@ glm/glm.hpp
 glm/gtc/type_ptr.hpp
 -
 texture.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h
 shader.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/shader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/shader.h
 string
 -
 memory
@@ -954,15 +954,15 @@ GL/glew.h
 glm/glm.hpp
 -
 texture.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.cpp
 iostream
 -
 texture.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/texture.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/texture.h
 string
 -
 vector
@@ -974,9 +974,9 @@ fstream
 GL/glew.h
 -
 image.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/image.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/image.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.cpp
 cstdlib
 -
 cstring
@@ -1000,9 +1000,9 @@ fstream
 sstream
 -
 tiny_obj_loader.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/tiny_obj_loader.h
 string
 -
 vector
@@ -1010,7 +1010,7 @@ vector
 map
 -
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.cpp
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.cpp
 cstdlib
 -
 iostream
@@ -1022,9 +1022,9 @@ GL/glew.h
 GLFW/glfw3.h
 -
 window.h
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.h
 
-C:/Users/peto1_000/Desktop/projekt_ppgso/ppgso/window.h
+C:/Users/peter/Desktop/projekt_ppgso/ppgso/window.h
 string
 -
 map
