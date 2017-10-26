@@ -7,8 +7,7 @@
 
 #include <glm/glm.hpp>
 #include <ppgso/ppgso.h>
-#include <cmake-build-debug/shaders/texture_vert_glsl.h>
-#include <cmake-build-debug/shaders/texture_frag_glsl.h>
+
 #include "cube.h"
 #include "scene.h"
 
@@ -26,13 +25,21 @@ public:
     static const unsigned int GAME_WINDOW_HEIGHT = 640;
 
     Scene mScene;
-    Shader program = {texture_vert_glsl, texture_frag_glsl};
 
     explicit GameWindow(const std::string &title = "Super Mario",
                unsigned int width = GAME_WINDOW_WIDTH,
                unsigned int height = GAME_WINDOW_HEIGHT);
 
     void onIdle() override;
+
+    /*!
+     * Handles pressed key when the window is focused
+     * @param key Key code of the key being pressed/released
+     * @param scanCode Scan code of the key being pressed/released
+     * @param action Action indicating the key state change
+     * @param mods Additional modifiers to consider
+     */
+    void onKey(int key, int scanCode, int action, int mods) override;
 
 private:
 

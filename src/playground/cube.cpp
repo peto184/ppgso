@@ -15,15 +15,16 @@ Cube::Cube(){
 }
 
 void Cube::setPosition(int x, int y){
-    mPosition.x = (float) x;
+    mPosition.x = (float) -x;
     mPosition.y = (float) y;
 }
 
-void Cube::update(float time) {
+bool Cube::update(float time) {
     mModelMatrix = glm::scale(mat4(1.0f), mScale);
-    mModelMatrix = glm::translate(mModelMatrix, mPosition);
-    mModelMatrix = glm::rotate(mModelMatrix, time, {0.0,1.0,0.0});
+    mModelMatrix = glm::translate(mat4{}, mPosition);
+    mModelMatrix = glm::rotate(mModelMatrix, 0.0f, {1.0,1.0,1.0});
     //generateModelMatrix();
+    return true;
 }
 
 void Cube::render(Scene &scene) {

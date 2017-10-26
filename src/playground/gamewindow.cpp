@@ -21,29 +21,32 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
 
     // init scene
     auto camera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
-    (*camera).position.z = -7.5f;
-    (*camera).position.y = 3.0;
+    (*camera).position.z = -10.0f;
+    (*camera).position.y = 3.0f;
+    (*camera).position.x = -3.0f;
     mScene.mCamera = move(camera);
+
+    auto player = std::make_unique<Player>();
+    mScene.mPlayer = move(player);
 }
 
 void GameWindow::onIdle() {
     // Set gray background
-    glClearColor(.5f,.5f,.5f,0.0f);
+    // Light blue RGB = 135,206,250
+    glClearColor((float) (135.0/255.0),(float) (206.0/255.0), (float) (250.0/255.0), 0.0f);
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    mScene.update();
+
+    // Track time
+    static auto time = (float) glfwGetTime();
+    float dt = (float) glfwGetTime() - time;
+    time = (float) glfwGetTime();
+
+    mScene.update(dt);
     mScene.render();
+}
 
-    // create object matrices
-
-    // Camera position/rotation - for example, translate mCamera a bit backwards (positive value in Z axis), so we can see the objects
-    //auto cameraMat = translate(mat4{}, {0.0f, 0.0f, -10.0f});
-    //cameraMat = rotate(cameraMat, (float) M_PI/4.0f, {1.0, 3.0, 0.0});
-    //cameraMat = translate(cameraMat, {0.0, -1.0, 0.0});
-    //program.setUniform("ViewMatrix", cameraMat);
-
-    // Update mCamera position with perspective projection
-    //program.setUniform("ProjectionMatrix", perspective((PI / 180.f) * 60.0f, 1.0f, 0.1f, 100.0f));
-
+void GameWindow::onKey(int key, int scanCode, int action, int mods) {
+    mScene.keyboard[key] = action;
 }

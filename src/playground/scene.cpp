@@ -12,10 +12,13 @@ Scene::Scene() {
             mGameWorld.at(i).emplace_back(cube);
         }
     }
+    //(*mPlayer).setPosition(2,2);
 }
 
 void Scene::render() {
     auto time = (float) glfwGetTime();
+
+    (*mPlayer).render(*this);
 
     for (auto &i : mGameWorld) {
         for (auto &c : i) {
@@ -24,16 +27,17 @@ void Scene::render() {
     }
 }
 
-void Scene::update() {
-    (*mCamera).update();
-
+void Scene::update(float dt) {
     auto time = (float) glfwGetTime();
+
+    (*mCamera).update();
+    (*mPlayer).update(*this, dt);
 
     for (unsigned long long int i = 0; i < mGameWorld.size(); i++) {
         for (unsigned long long int j = 0; j < mGameWorld.at(i).size(); j++) {
             Cube &c = mGameWorld.at(i).at(j);
-            c.setPosition((int) i,(int) j);
-            c.update(time);
+            c.setPosition((int)j,(int) i);
+            c.update(dt);
         }
     }
 

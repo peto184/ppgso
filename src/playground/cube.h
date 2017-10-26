@@ -30,7 +30,7 @@ public:
     glm::vec3 mScale{1,1,1};
     glm::mat4 mModelMatrix{1};
 
-    void update(float time);
+    bool update(float time);
     void render(Scene &scene);
 
     void setPosition(int x, int y);

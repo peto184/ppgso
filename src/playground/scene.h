@@ -9,6 +9,9 @@ class Cube;
 #include "cube.h"
 #include "camera.h"
 
+class Player;
+#include "player.h"
+
 #include <glm/glm.hpp>
 
 using namespace std;
@@ -19,16 +22,21 @@ class Scene {
 public:
     ppgso::Shader program = {texture_vert_glsl, texture_frag_glsl};
 
-    static const int mWorldLength = 3;
-    static const int mWorldHeight = 3;
+    static const int mWorldLength = 5;
+    static const int mWorldHeight = 1;
 
     std::vector<std::vector<Cube> > mGameWorld;
     std::unique_ptr<Camera> mCamera;
+    std::unique_ptr<Player> mPlayer;
+
+    // Keyboard state
+    std::map< int, int > keyboard;
+
 
     Scene();
 
     void render();
-    void update();
+    void update(float dt);
 
 };
 
