@@ -10,21 +10,22 @@
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
 #include "cube.h"
+#include "scene.h"
 
 #include <glm/gtx/matrix_transform_2d.hpp>
 #include <glm/gtx/euler_angles.hpp>
 #include <iostream>
 
-using namespace ppgso;
 using namespace std;
+using namespace glm;
+using namespace ppgso;
 
 class GameWindow : public Window {
 public:
-    static const unsigned int GAME_WINDOW_WIDTH = 1280;
-    static const unsigned int GAME_WINDOW_HEIGHT = 1024;
+    static const unsigned int GAME_WINDOW_WIDTH = 860;
+    static const unsigned int GAME_WINDOW_HEIGHT = 640;
 
-    vector<Cube> cube_vector;
-
+    Scene mScene;
     Shader program = {texture_vert_glsl, texture_frag_glsl};
 
     explicit GameWindow(const std::string &title = "Super Mario",

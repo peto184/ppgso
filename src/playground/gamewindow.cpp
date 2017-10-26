@@ -19,11 +19,6 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
     glFrontFace(GL_CCW);
     glCullFace(GL_BACK);
 
-    // insert the cubes
-    for (int i = 0; i < 5; i++){
-        cube_vector.emplace_back(Cube());
-    }
-
 }
 
 void GameWindow::onIdle() {
@@ -32,26 +27,18 @@ void GameWindow::onIdle() {
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    auto time = (float) glfwGetTime();
-
-    for (int i = 0; i < cube_vector.size(); i++){
-        Cube& c = cube_vector.at(i);
-        c.mModelMatrix = rotate(mat4{}, time, {0.0f, 0.5f * pow(-1.0, i), 0.0f});
-        c.mModelMatrix = translate(c.mModelMatrix, {0.0, 0.0, float(i)});
-        program.setUniform("Texture", *(c.mTexture));
-        program.setUniform("ModelMatrix", c.mModelMatrix);
-
-        Mesh &m = *(c.mMesh);
-        m.render();
-    }
+    mScene.update();
+    mScene.render();
 
     // create object matrices
 
     // Camera position/rotation - for example, translate camera a bit backwards (positive value in Z axis), so we can see the objects
-    auto cameraMat = translate(mat4{}, {0.0f, 0.0f, -5.0f});
+    auto cameraMat = translate(mat4{}, {0.0f, 0.0f, -10.0f});
+    cameraMat = rotate(cameraMat, (float) M_PI/4.0f, {1.0, 3.0, 0.0});
+    cameraMat = translate(cameraMat, {0.0, -1.0, 0.0});
     program.setUniform("ViewMatrix", cameraMat);
 
     // Update camera position with perspective projection
-    program.setUniform("ProjectionMatrix", perspective((PI / 180.f) * 60.0f, 1.0f, 0.1f, 10.0f));
+    program.setUniform("ProjectionMatrix", perspective((PI / 180.f) * 60.0f, 1.0f, 0.1f, 100.0f));
 
 }

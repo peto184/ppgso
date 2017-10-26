@@ -9,10 +9,11 @@
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
 
+class Scene;
+#include "scene.h"
+
 class Cube {
 private:
-
-
 public:
     std::unique_ptr<ppgso::Mesh> mMesh;
     std::unique_ptr<ppgso::Shader> mShader;
@@ -24,6 +25,9 @@ public:
     glm::mat4 mModelMatrix{1};
 
     Cube();
+
+    void update(Scene &scene);
+    void render(Scene &scene);
 };
 
 
