@@ -19,11 +19,11 @@ class Scene {
 public:
     ppgso::Shader program = {texture_vert_glsl, texture_frag_glsl};
 
-    static const int mWorldLength = 8;
-    static const int mWorldHeight = 5;
+    static const int mWorldLength = 3;
+    static const int mWorldHeight = 3;
 
     std::vector<std::vector<Cube> > mGameWorld;
-    std::unique_ptr<Camera> camera;
+    std::unique_ptr<Camera> mCamera;
 
     Scene();
 

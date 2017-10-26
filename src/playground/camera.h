@@ -25,7 +25,7 @@ public:
      * @param near - Distance to the near frustum plane
      * @param far - Distance to the far frustum plane
      */
-    Camera(float fow = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 10.0f);
+    explicit Camera(float fow = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 10.0f);
 
     /*!
      * Update Camera viewMatrix based on up, position and back vectors

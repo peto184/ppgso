@@ -9,25 +9,31 @@
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
 
+#include <glm/gtx/euler_angles.hpp>
+
 class Scene;
 #include "scene.h"
 
 class Cube {
 private:
+    static std::unique_ptr<ppgso::Mesh> mMesh;
+    static std::unique_ptr<ppgso::Shader> mShader;
+    static std::unique_ptr<ppgso::Texture> mTexture;
+
+    void generateModelMatrix();
+
 public:
-    std::unique_ptr<ppgso::Mesh> mMesh;
-    std::unique_ptr<ppgso::Shader> mShader;
-    std::unique_ptr<ppgso::Texture> mTexture;
+    Cube();
 
     glm::vec3 mPosition{0,0,0};
     glm::vec3 mRotation{0,0,0};
     glm::vec3 mScale{1,1,1};
     glm::mat4 mModelMatrix{1};
 
-    Cube();
-
-    void update(Scene &scene);
+    void update(float time);
     void render(Scene &scene);
+
+    void setPosition(int x, int y);
 };
 
 

@@ -19,6 +19,11 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
     glFrontFace(GL_CCW);
     glCullFace(GL_BACK);
 
+    // init scene
+    auto camera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
+    (*camera).position.z = -7.5f;
+    (*camera).position.y = 3.0;
+    mScene.mCamera = move(camera);
 }
 
 void GameWindow::onIdle() {
@@ -32,13 +37,13 @@ void GameWindow::onIdle() {
 
     // create object matrices
 
-    // Camera position/rotation - for example, translate camera a bit backwards (positive value in Z axis), so we can see the objects
-    auto cameraMat = translate(mat4{}, {0.0f, 0.0f, -10.0f});
-    cameraMat = rotate(cameraMat, (float) M_PI/4.0f, {1.0, 3.0, 0.0});
-    cameraMat = translate(cameraMat, {0.0, -1.0, 0.0});
-    program.setUniform("ViewMatrix", cameraMat);
+    // Camera position/rotation - for example, translate mCamera a bit backwards (positive value in Z axis), so we can see the objects
+    //auto cameraMat = translate(mat4{}, {0.0f, 0.0f, -10.0f});
+    //cameraMat = rotate(cameraMat, (float) M_PI/4.0f, {1.0, 3.0, 0.0});
+    //cameraMat = translate(cameraMat, {0.0, -1.0, 0.0});
+    //program.setUniform("ViewMatrix", cameraMat);
 
-    // Update camera position with perspective projection
-    program.setUniform("ProjectionMatrix", perspective((PI / 180.f) * 60.0f, 1.0f, 0.1f, 100.0f));
+    // Update mCamera position with perspective projection
+    //program.setUniform("ProjectionMatrix", perspective((PI / 180.f) * 60.0f, 1.0f, 0.1f, 100.0f));
 
 }
