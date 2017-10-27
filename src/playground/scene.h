@@ -11,6 +11,7 @@ class Cube;
 
 class Player;
 #include "player.h"
+#include "map.h"
 
 #include <glm/glm.hpp>
 
@@ -22,12 +23,10 @@ class Scene {
 public:
     ppgso::Shader program = {texture_vert_glsl, texture_frag_glsl};
 
-    static const int mWorldLength = 5;
-    static const int mWorldHeight = 1;
-
-    std::vector<std::vector<Cube> > mGameWorld;
+    std::vector<Cube> mCubes;
     std::unique_ptr<Camera> mCamera;
     std::unique_ptr<Player> mPlayer;
+    std::unique_ptr<Map> mMap;
 
     // Keyboard state
     std::map< int, int > keyboard;
@@ -37,6 +36,7 @@ public:
 
     void render();
     void update(float dt);
+    void loadAssets();
 
 };
 

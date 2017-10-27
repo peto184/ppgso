@@ -14,16 +14,12 @@ Cube::Cube(){
     if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("cube.obj");
 }
 
-void Cube::setPosition(int x, int y){
-    mPosition.x = (float) -x;
-    mPosition.y = (float) y;
-}
-
 bool Cube::update(float time) {
     mModelMatrix = glm::scale(mat4(1.0f), mScale);
-    mModelMatrix = glm::translate(mat4{}, mPosition);
-    mModelMatrix = glm::rotate(mModelMatrix, 0.0f, {1.0,1.0,1.0});
+    mModelMatrix = glm::translate(mModelMatrix, mPosition);
+    mModelMatrix = glm::rotate(mModelMatrix, 0.0f, mRotation);
     //generateModelMatrix();
+
     return true;
 }
 

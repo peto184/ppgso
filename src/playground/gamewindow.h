@@ -10,6 +10,7 @@
 
 #include "cube.h"
 #include "scene.h"
+#include "map.h"
 
 #include <glm/gtx/matrix_transform_2d.hpp>
 #include <glm/gtx/euler_angles.hpp>
@@ -45,6 +46,7 @@ private:
 
 protected:
 
+    void initScene();
 };
 
 

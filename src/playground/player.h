@@ -18,23 +18,29 @@ public:
         PLAYER_STANDING
     };
 
+    const float PLAYER_SPEED = 5.0f;
+    const float PLAYER_JUMP_STRENGTH = 10.0f;
+    const float PLAYER_GRAVITY = 15.0f;
+
     glm::vec3 mPosition{0.0,1.0,0};
-    glm::vec3 mRotation{0,0,0};
-    glm::vec3 mScale{1,1,1};
+    glm::vec3 mRotation{0,1.0,0};
+    glm::vec3 mScale{0.8,0.8,0.8};
+
     glm::mat4 mModelMatrix{1};
 
-    float mJumpMomentum = 0.0f;
+    glm::vec3 mDirection{0.0,0.0,0.0};
     enum State mPlayerState = PLAYER_STANDING;
 
     bool update(Scene& scene, float dt);
     void render(Scene &scene);
 
-    void setPosition(int x, int y);
-
 private:
     static std::unique_ptr<ppgso::Mesh> mMesh;
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;
+
+    bool checkCollisionY(Cube &c);
+    bool checkCollisionX(Cube &c);
 };
 
 

@@ -4,41 +4,54 @@
 
 #include "scene.h"
 
-Scene::Scene() {
-    for (unsigned long long int i = 0; i < mWorldHeight; i++){
-        mGameWorld.emplace_back(std::vector<Cube>());
-        for (int j = 0; j < mWorldLength; j++){
-            Cube cube;
-            mGameWorld.at(i).emplace_back(cube);
+Scene::Scene() = default;
+
+void Scene::loadAssets(){
+    Map& m = *mMap;
+
+    for (auto i = 0; i < m.map.size(); i++){
+        for (auto j = 0; j < m.map.at(i).size(); j++) {
+            switch(m.map[i][j]) {
+                case Map::Tile::BLOCK: {
+                    Cube cube;
+
+                    cube.mPosition.x = (float) (m.map.at(i).size() - j);
+                    cube.mPosition.y = (float) (m.map.size() - i);
+                    mCubes.emplace_back(cube);
+                    break;
+                }
+                case Map::Tile::PLAYER: {
+                    (*mPlayer).mPosition.x = (m.map.at(i).size() - j);
+                    (*mPlayer).mPosition.y = (m.map.size() - i);
+                    break;
+                }
+                case Map::Tile::AIR:
+                    break;
+                default:
+                    cout << "invalid choice" << endl;
+            }
         }
     }
-    //(*mPlayer).setPosition(2,2);
+
 }
 
 void Scene::render() {
-    auto time = (float) glfwGetTime();
-
     (*mPlayer).render(*this);
 
-    for (auto &i : mGameWorld) {
-        for (auto &c : i) {
-           c.render(*this);
-        }
+    for (auto &c : mCubes) {
+        c.render(*this);
     }
 }
 
 void Scene::update(float dt) {
-    auto time = (float) glfwGetTime();
-
+    (*mCamera).position = (*mPlayer).mPosition;
+    ((*mCamera).position).z += -15.0f;
     (*mCamera).update();
+
     (*mPlayer).update(*this, dt);
 
-    for (unsigned long long int i = 0; i < mGameWorld.size(); i++) {
-        for (unsigned long long int j = 0; j < mGameWorld.at(i).size(); j++) {
-            Cube &c = mGameWorld.at(i).at(j);
-            c.setPosition((int)j,(int) i);
-            c.update(dt);
-        }
+    for (auto &c : mCubes) {
+        c.update(dt);
     }
 
 }

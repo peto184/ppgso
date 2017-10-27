@@ -14,37 +14,52 @@ Player::Player(){
     if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("sphere.obj");
 }
 
-void Player::setPosition(int x, int y){
-    mPosition.x = (float) x;
-    mPosition.y = (float) y;
+bool Player::checkCollisionY(Cube& c){
+    return mPosition.y + mScale.y >= c.mPosition.y && c.mPosition.y + c.mScale.y >= mPosition.y;
+}
+
+bool Player::checkCollisionX(Cube& c){
+    return mPosition.x + mScale.x >= c.mPosition.x && c.mPosition.x + c.mScale.x >= mPosition.x;
 }
 
 bool Player::update(Scene &scene, float dt) {
 
+    // === Set directions
     if(scene.keyboard[GLFW_KEY_LEFT]){
-        mPosition.x += 10 * dt;
+        mDirection.x = PLAYER_SPEED;
     }
     else if (scene.keyboard[GLFW_KEY_RIGHT]) {
-        mPosition.x -= 10 * dt;
+        mDirection.x = -PLAYER_SPEED;
     }
-    else if (scene.keyboard[GLFW_KEY_UP] && mPlayerState==PLAYER_STANDING){
-        mJumpMomentum = 7.0;
+    else {
+        mDirection.x = 0;
+    }
+    if (scene.keyboard[GLFW_KEY_UP] && mPlayerState == PLAYER_STANDING){
+        mDirection.y = PLAYER_JUMP_STRENGTH;
         mPlayerState = PLAYER_JUMPING;
     }
 
-    mPosition.y += mJumpMomentum * dt;
-    mJumpMomentum -= 15.0 * dt;
+    // Gravity
+    mDirection.y -= PLAYER_GRAVITY*dt;
 
-    if (mPosition.y < 1.0) {
-        mPosition.y = 1.0;
-        mJumpMomentum = 0.0;
-        mPlayerState = PLAYER_STANDING;
+    for (Cube c : scene.mCubes) {
+        if (checkCollisionY(c) && checkCollisionX(c)) {
+            // Nastala kolizia, pozri sa z ktorej strany je vacsie
+            mPosition.y = c.mPosition.y + c.mScale.y/2.0f + mScale.y/2.0f;
+
+            if (mDirection.y < 0.0)
+                mDirection.y = 0.0f;
+
+            //mDirection.x = 0.0f;
+            mPlayerState = PLAYER_STANDING;
+        }
     }
 
-
-    mModelMatrix = glm::scale(mat4(1.0f), mScale);
-    mModelMatrix = glm::translate(mModelMatrix, mPosition);
-    mModelMatrix = glm::rotate(mModelMatrix, (float)glfwGetTime(), {0.0,1.0,0.0});
+    // Move from position by direction in dt
+    mPosition = mPosition + (mDirection*dt);
+    mModelMatrix = glm::translate(mat4(1.0f), mPosition)
+                        * glm::rotate(mat4(1.0f), (float) glfwGetTime(), mRotation)
+                        * glm::scale(mat4(1.0f), mScale);
 
     return true;
 }

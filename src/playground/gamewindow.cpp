@@ -19,15 +19,25 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
     glFrontFace(GL_CCW);
     glCullFace(GL_BACK);
 
+    initScene();
+}
+
+void GameWindow::initScene(){
+    // Clear objects
+    mScene.mCubes.clear();
+
+    // loadMap
+    auto map = std::make_unique<Map>("map1");
+    mScene.mMap = move(map);
+
     // init scene
     auto camera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
-    (*camera).position.z = -10.0f;
-    (*camera).position.y = 3.0f;
-    (*camera).position.x = -3.0f;
     mScene.mCamera = move(camera);
 
     auto player = std::make_unique<Player>();
     mScene.mPlayer = move(player);
+
+    mScene.loadAssets();
 }
 
 void GameWindow::onIdle() {
@@ -49,4 +59,9 @@ void GameWindow::onIdle() {
 
 void GameWindow::onKey(int key, int scanCode, int action, int mods) {
     mScene.keyboard[key] = action;
+
+    if (key == GLFW_KEY_R && action == GLFW_PRESS){
+        initScene();
+    }
+
 }

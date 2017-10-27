@@ -26,14 +26,12 @@ public:
     Cube();
 
     glm::vec3 mPosition{0,0,0};
-    glm::vec3 mRotation{0,0,0};
+    glm::vec3 mRotation{1.0,1.0,1.0};
     glm::vec3 mScale{1,1,1};
     glm::mat4 mModelMatrix{1};
 
     bool update(float time);
     void render(Scene &scene);
-
-    void setPosition(int x, int y);
 };
 
 
