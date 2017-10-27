@@ -13,6 +13,9 @@ class Player;
 #include "player.h"
 #include "map.h"
 
+class Background;
+#include "background.h"
+
 #include <glm/glm.hpp>
 
 using namespace std;
@@ -25,6 +28,7 @@ public:
 
     std::vector<Cube> mCubes;
     std::unique_ptr<Camera> mCamera;
+    std::unique_ptr<Background> mBackground;
     std::unique_ptr<Player> mPlayer;
     std::unique_ptr<Map> mMap;
 

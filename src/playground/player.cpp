@@ -50,7 +50,6 @@ bool Player::update(Scene &scene, float dt) {
             if (mDirection.y < 0.0)
                 mDirection.y = 0.0f;
 
-            //mDirection.x = 0.0f;
             mPlayerState = PLAYER_STANDING;
         }
     }

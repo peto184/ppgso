@@ -36,8 +36,8 @@ void Scene::loadAssets(){
 }
 
 void Scene::render() {
+    (*mBackground).render(*this);
     (*mPlayer).render(*this);
-
     for (auto &c : mCubes) {
         c.render(*this);
     }
@@ -48,6 +48,7 @@ void Scene::update(float dt) {
     ((*mCamera).position).z += -15.0f;
     (*mCamera).update();
 
+    (*mBackground).update(*this, dt);
     (*mPlayer).update(*this, dt);
 
     for (auto &c : mCubes) {

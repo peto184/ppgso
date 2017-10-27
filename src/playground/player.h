@@ -18,13 +18,20 @@ public:
         PLAYER_STANDING
     };
 
+    enum CollisionDirection {
+        UP,
+        RIGHT,
+        DOWN,
+        LEFT
+    };
+
     const float PLAYER_SPEED = 5.0f;
     const float PLAYER_JUMP_STRENGTH = 10.0f;
     const float PLAYER_GRAVITY = 15.0f;
 
     glm::vec3 mPosition{0.0,1.0,0};
     glm::vec3 mRotation{0,1.0,0};
-    glm::vec3 mScale{0.8,0.8,0.8};
+    glm::vec3 mScale{1.0,1.0,1.0};
 
     glm::mat4 mModelMatrix{1};
 

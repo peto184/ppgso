@@ -37,6 +37,9 @@ void GameWindow::initScene(){
     auto player = std::make_unique<Player>();
     mScene.mPlayer = move(player);
 
+    auto background = std::make_unique<Background>();
+    mScene.mBackground = move(background);
+
     mScene.loadAssets();
 }
 
