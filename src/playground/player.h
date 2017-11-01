@@ -31,6 +31,7 @@ public:
 
     glm::vec3 mPosition{0.0,1.0,0};
     glm::vec3 mRotation{0,1.0,0};
+    float mRotAngle = (float) (3 * M_PI / 2.0);
     glm::vec3 mScale{1.0,1.0,1.0};
 
     glm::mat4 mModelMatrix{1};
@@ -43,6 +44,9 @@ public:
 
 private:
     static std::unique_ptr<ppgso::Mesh> mMesh;
+    static std::unique_ptr<ppgso::Mesh> mMeshJumping;
+    static std::unique_ptr<ppgso::Mesh> mMeshStanding;
+
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;
 

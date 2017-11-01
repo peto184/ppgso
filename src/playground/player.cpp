@@ -5,13 +5,20 @@
 #include "player.h"
 
 std::unique_ptr<ppgso::Mesh> Player::mMesh;
+
+std::unique_ptr<ppgso::Mesh> Player::mMeshJumping;
+std::unique_ptr<ppgso::Mesh> Player::mMeshStanding;
+
 std::unique_ptr<ppgso::Shader> Player::mShader;
 std::unique_ptr<ppgso::Texture> Player::mTexture;
 
 Player::Player(){
     if (!mShader) mShader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
-    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/blockGold.bmp"));
-    if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("sphere.obj");
+    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("lena.bmp"));
+    if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+
+    if (!mMesh) mMeshStanding = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
+    if (!mMesh) mMeshJumping = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
 }
 
 bool Player::checkCollisionY(Cube& c){
@@ -27,9 +34,11 @@ bool Player::update(Scene &scene, float dt) {
     // === Set directions
     if(scene.keyboard[GLFW_KEY_LEFT]){
         mDirection.x = PLAYER_SPEED;
+        mRotAngle = (float) (M_PI / 2.0);
     }
     else if (scene.keyboard[GLFW_KEY_RIGHT]) {
         mDirection.x = -PLAYER_SPEED;
+        mRotAngle = (float) (3 * M_PI / 2.0);
     }
     else {
         mDirection.x = 0;
@@ -37,6 +46,7 @@ bool Player::update(Scene &scene, float dt) {
     if (scene.keyboard[GLFW_KEY_UP] && mPlayerState == PLAYER_STANDING){
         mDirection.y = PLAYER_JUMP_STRENGTH;
         mPlayerState = PLAYER_JUMPING;
+        mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
     }
 
     // Gravity
@@ -45,11 +55,11 @@ bool Player::update(Scene &scene, float dt) {
     for (Cube c : scene.mCubes) {
         if (checkCollisionY(c) && checkCollisionX(c)) {
             // Nastala kolizia, pozri sa z ktorej strany je vacsie
-            mPosition.y = c.mPosition.y + c.mScale.y/2.0f + mScale.y/2.0f;
+            mPosition.y = c.mPosition.y + c.mScale.y/2.0f; // + mScale.y/2.0f;
 
             if (mDirection.y < 0.0)
                 mDirection.y = 0.0f;
-
+            mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
             mPlayerState = PLAYER_STANDING;
         }
     }
@@ -57,7 +67,7 @@ bool Player::update(Scene &scene, float dt) {
     // Move from position by direction in dt
     mPosition = mPosition + (mDirection*dt);
     mModelMatrix = glm::translate(mat4(1.0f), mPosition)
-                        * glm::rotate(mat4(1.0f), (float) glfwGetTime(), mRotation)
+                        * glm::rotate(mat4(1.0f), mRotAngle, mRotation)
                         * glm::scale(mat4(1.0f), mScale);
 
     return true;
