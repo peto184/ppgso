@@ -7,27 +7,25 @@
 #define PPGSO_PLAYER_H
 
 #include <ppgso/ppgso.h>
+#include "constants.h"
 #include "scene.h"
+#include "projectile.h"
 
 class Player final {
 public:
     Player();
 
     enum State {
-        PLAYER_JUMPING,
-        PLAYER_STANDING
-    };
-
-    enum CollisionDirection {
-        UP,
-        RIGHT,
-        DOWN,
-        LEFT
+        PLAYER_IN_AIR,
+        PLAYER_ON_GROUND
     };
 
     const float PLAYER_SPEED = 5.0f;
     const float PLAYER_JUMP_STRENGTH = 10.0f;
     const float PLAYER_GRAVITY = 15.0f;
+
+    const float RELOAD_TIME = 0.15;
+    float mReload = 0.0;
 
     glm::vec3 mPosition{0.0,1.0,0};
     glm::vec3 mRotation{0,1.0,0};
@@ -37,7 +35,8 @@ public:
     glm::mat4 mModelMatrix{1};
 
     glm::vec3 mDirection{0.0,0.0,0.0};
-    enum State mPlayerState = PLAYER_STANDING;
+    enum State mPlayerState = PLAYER_ON_GROUND;
+    enum Orientation mOrientation;
 
     bool update(Scene& scene, float dt);
     void render(Scene &scene);

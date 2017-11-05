@@ -38,8 +38,13 @@ void Scene::loadAssets(){
 void Scene::render() {
     (*mBackground).render(*this);
     (*mPlayer).render(*this);
+
     for (auto &c : mCubes) {
         c.render(*this);
+    }
+
+    for (auto &p : mProjectiles) {
+        p.render(*this);
     }
 }
 
@@ -53,6 +58,18 @@ void Scene::update(float dt) {
 
     for (auto &c : mCubes) {
         c.update(dt);
+    }
+
+    /*for (auto &p : mProjectiles) {
+        if (!p.update(*this, dt));
+    }*/
+
+    for (auto it = mProjectiles.begin(); it != mProjectiles.end(); ){
+        if (!it->update(*this, dt)) {
+            it = mProjectiles.erase(it);
+        } else {
+            ++it;
+        }
     }
 
 }

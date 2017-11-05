@@ -16,7 +16,12 @@ class Player;
 class Background;
 #include "background.h"
 
+class Projectile;
+#include "projectile.h"
+
 #include <glm/glm.hpp>
+#include <algorithm>
+#include <functional>
 
 using namespace std;
 using namespace glm;
@@ -24,9 +29,9 @@ using namespace ppgso;
 
 class Scene {
 public:
-    ppgso::Shader program = {texture_vert_glsl, texture_frag_glsl};
-
     std::vector<Cube> mCubes;
+    std::vector<Projectile> mProjectiles;
+
     std::unique_ptr<Camera> mCamera;
     std::unique_ptr<Background> mBackground;
     std::unique_ptr<Player> mPlayer;

@@ -14,16 +14,18 @@ std::unique_ptr<ppgso::Texture> Player::mTexture;
 
 Player::Player(){
     if (!mShader) mShader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
-    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/dirt.bmp"));
+    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/gold.bmp"));
     //if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
 
-    if (!mMeshStanding) mMeshStanding = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
-    if (!mMeshJumping) mMeshJumping = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+    if (!mMeshStanding) mMeshStanding = std::make_unique<ppgso::Mesh>("psyduck/psyduck2.obj");
+    if (!mMeshJumping) mMeshJumping = std::make_unique<ppgso::Mesh>("psyduck/psyduck2.obj");
     if (!mMesh) mMesh = mMeshStanding.get();
+
+    mOrientation = RIGHT;
 }
 
 bool Player::checkCollisionY(Cube& c){
-    return mPosition.y + mScale.y >= c.mPosition.y && c.mPosition.y + c.mScale.y >= mPosition.y;
+    return mPosition.y >= c.mPosition.y && c.mPosition.y + c.mScale.y >= mPosition.y;
 }
 
 bool Player::checkCollisionX(Cube& c){
@@ -33,35 +35,48 @@ bool Player::checkCollisionX(Cube& c){
 bool Player::update(Scene &scene, float dt) {
 
     // === Set directions
-    if(scene.keyboard[GLFW_KEY_LEFT]){
+    if(scene.keyboard[GLFW_KEY_A]){
         mDirection.x = PLAYER_SPEED;
-        mRotAngle = (float) (M_PI / 2.0);
-    }
-    else if (scene.keyboard[GLFW_KEY_RIGHT]) {
-        mDirection.x = -PLAYER_SPEED;
         mRotAngle = (float) (3 * M_PI / 2.0);
+        mOrientation = LEFT;
+    }
+    else if (scene.keyboard[GLFW_KEY_D]) {
+        mDirection.x = -PLAYER_SPEED;
+        mRotAngle = (float) (M_PI / 2.0);
+        mOrientation = RIGHT;
     }
     else {
         mDirection.x = 0;
     }
-    if (scene.keyboard[GLFW_KEY_UP] && mPlayerState == PLAYER_STANDING){
+    if (scene.keyboard[GLFW_KEY_W] && mPlayerState == PLAYER_ON_GROUND){
         mDirection.y = PLAYER_JUMP_STRENGTH;
-        mPlayerState = PLAYER_JUMPING;
+        mPlayerState = PLAYER_IN_AIR;
         mMesh = mMeshJumping.get();
     }
 
+    if (scene.keyboard[GLFW_KEY_SPACE] && mReload > RELOAD_TIME){
+        scene.mProjectiles.emplace_back(Projectile{this->mPosition, this->mOrientation});
+        mReload = 0.0f;
+    }
+
+    if (mReload < RELOAD_TIME)
+        mReload += dt;
+
     // Gravity
-    mDirection.y -= PLAYER_GRAVITY*dt;
+    if (mDirection.y > -PLAYER_GRAVITY)
+        mDirection.y -= PLAYER_GRAVITY*dt;
 
     for (Cube c : scene.mCubes) {
-        if (checkCollisionY(c) && checkCollisionX(c)) {
-            // Nastala kolizia, pozri sa z ktorej strany je vacsie
-            mPosition.y = c.mPosition.y + c.mScale.y/2.0f; // + mScale.y/2.0f;
+        // Check collision only if player is falling
+        if (checkCollisionY(c) && checkCollisionX(c) && mDirection.y < 0) {
+            mPosition.y = c.mPosition.y + c.mScale.y/2.0f;
 
             if (mDirection.y < 0.0)
                 mDirection.y = 0.0f;
+
             mMesh = mMeshStanding.get();
-            mPlayerState = PLAYER_STANDING;
+            mPlayerState = PLAYER_ON_GROUND;
+            break;
         }
     }
 
