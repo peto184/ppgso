@@ -4,7 +4,7 @@
 
 #include "player.h"
 
-std::unique_ptr<ppgso::Mesh> Player::mMesh;
+ppgso::Mesh* Player::mMesh;
 
 std::unique_ptr<ppgso::Mesh> Player::mMeshJumping;
 std::unique_ptr<ppgso::Mesh> Player::mMeshStanding;
@@ -14,11 +14,12 @@ std::unique_ptr<ppgso::Texture> Player::mTexture;
 
 Player::Player(){
     if (!mShader) mShader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
-    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("lena.bmp"));
-    if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/dirt.bmp"));
+    //if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
 
-    if (!mMesh) mMeshStanding = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
-    if (!mMesh) mMeshJumping = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+    if (!mMeshStanding) mMeshStanding = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
+    if (!mMeshJumping) mMeshJumping = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+    if (!mMesh) mMesh = mMeshStanding.get();
 }
 
 bool Player::checkCollisionY(Cube& c){
@@ -46,7 +47,7 @@ bool Player::update(Scene &scene, float dt) {
     if (scene.keyboard[GLFW_KEY_UP] && mPlayerState == PLAYER_STANDING){
         mDirection.y = PLAYER_JUMP_STRENGTH;
         mPlayerState = PLAYER_JUMPING;
-        mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
+        mMesh = mMeshJumping.get();
     }
 
     // Gravity
@@ -59,7 +60,7 @@ bool Player::update(Scene &scene, float dt) {
 
             if (mDirection.y < 0.0)
                 mDirection.y = 0.0f;
-            mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_standing.obj");
+            mMesh = mMeshStanding.get();
             mPlayerState = PLAYER_STANDING;
         }
     }

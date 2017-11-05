@@ -43,7 +43,7 @@ public:
     void render(Scene &scene);
 
 private:
-    static std::unique_ptr<ppgso::Mesh> mMesh;
+    static ppgso::Mesh *mMesh;
     static std::unique_ptr<ppgso::Mesh> mMeshJumping;
     static std::unique_ptr<ppgso::Mesh> mMeshStanding;
 
