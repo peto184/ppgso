@@ -9,15 +9,30 @@ std::unique_ptr<ppgso::Mesh> Projectile::mMesh;
 std::unique_ptr<ppgso::Shader> Projectile::mShader;
 std::unique_ptr<ppgso::Texture> Projectile::mTexture;
 
+bool Projectile::checkCollisionY(Cube& c){
+    return mPosition.y >= c.mPosition.y && c.mPosition.y + c.mScale.y >= mPosition.y;
+}
+
+bool Projectile::checkCollisionX(Cube& c){
+    return mPosition.x + mScale.x >= c.mPosition.x && c.mPosition.x + c.mScale.x >= mPosition.x;
+}
+
 bool Projectile::update(Scene &scene, float dt) {
     age += dt;
     if (age > MAX_AGE)
         return false;
 
     if (mOrientation == LEFT)
-        mPosition.x += dt * PROJECTILE_SPEED;
-    else
         mPosition.x -= dt * PROJECTILE_SPEED;
+    else
+        mPosition.x += dt * PROJECTILE_SPEED;
+
+    for (Cube c : scene.mCubes) {
+        // Check collision only if player is falling
+        if (checkCollisionY(c) && checkCollisionX(c)) {
+            return false;
+        }
+    }
 
 
     mModelMatrix = glm::translate(mat4(1.0f), mPosition)

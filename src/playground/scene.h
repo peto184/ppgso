@@ -27,6 +27,8 @@ using namespace std;
 using namespace glm;
 using namespace ppgso;
 
+class Camera;
+
 class Scene {
 public:
     std::vector<Cube> mCubes;
@@ -39,7 +41,6 @@ public:
 
     // Keyboard state
     std::map< int, int > keyboard;
-
 
     Scene();
 

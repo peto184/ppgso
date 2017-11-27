@@ -14,6 +14,7 @@ class Projectile {
 public:
     float PROJECTILE_SPEED = 20.0f;
     float MAX_AGE = 1.0f;
+    float PROJECTILE_WEIGHT = 5.0f;
 
     float age = 0.0f;
 
@@ -34,6 +35,10 @@ public:
     static std::unique_ptr<ppgso::Mesh> mMesh;
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;
+
+    bool checkCollisionY(Cube &c);
+
+    bool checkCollisionX(Cube &c);
 };
 
 

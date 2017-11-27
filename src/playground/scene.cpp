@@ -15,13 +15,13 @@ void Scene::loadAssets(){
                 case Map::Tile::BLOCK: {
                     Cube cube;
 
-                    cube.mPosition.x = (float) (m.map.at(i).size() - j);
+                    cube.mPosition.x = (float) (j);
                     cube.mPosition.y = (float) (m.map.size() - i);
                     mCubes.emplace_back(cube);
                     break;
                 }
                 case Map::Tile::PLAYER: {
-                    (*mPlayer).mPosition.x = (m.map.at(i).size() - j);
+                    (*mPlayer).mPosition.x = (j);
                     (*mPlayer).mPosition.y = (m.map.size() - i);
                     break;
                 }
@@ -37,7 +37,10 @@ void Scene::loadAssets(){
 
 void Scene::render() {
     (*mBackground).render(*this);
-    (*mPlayer).render(*this);
+
+    if (mCamera->mCameraMode != Camera::FIRST_PERSON) {
+        (*mPlayer).render(*this);
+    }
 
     for (auto &c : mCubes) {
         c.render(*this);
@@ -49,21 +52,20 @@ void Scene::render() {
 }
 
 void Scene::update(float dt) {
-    (*mCamera).position = (*mPlayer).mPosition;
-    ((*mCamera).position).z += -15.0f;
-    (*mCamera).update();
 
+    // Update camera
+    (*mCamera).update(*this);
+
+    // Update background and player
     (*mBackground).update(*this, dt);
     (*mPlayer).update(*this, dt);
 
+    // Update cubes
     for (auto &c : mCubes) {
         c.update(dt);
     }
 
-    /*for (auto &p : mProjectiles) {
-        if (!p.update(*this, dt));
-    }*/
-
+    // Update projectiles
     for (auto it = mProjectiles.begin(); it != mProjectiles.end(); ){
         if (!it->update(*this, dt)) {
             it = mProjectiles.erase(it);

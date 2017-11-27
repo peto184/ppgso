@@ -24,7 +24,7 @@ public:
     const float PLAYER_JUMP_STRENGTH = 10.0f;
     const float PLAYER_GRAVITY = 15.0f;
 
-    const float RELOAD_TIME = 0.15;
+    const float RELOAD_TIME = 0.00001f;
     float mReload = 0.0;
 
     glm::vec3 mPosition{0.0,1.0,0};

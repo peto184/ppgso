@@ -7,16 +7,25 @@
 
 #include <memory>
 #include <glm/glm.hpp>
-#include<ppgso/ppgso.h>
+#include <ppgso/ppgso.h>
+#include "player.h"
 
+class Player;
 class Camera {
 public:
     glm::vec3 up{0,1,0};
     glm::vec3 position{0,0,0};
-    glm::vec3 back{0,0,-1};
 
     glm::mat4 viewMatrix;
     glm::mat4 projectionMatrix;
+
+    enum CameraMode {
+        SIDE_CAMERA = 0,
+        BEHIND_CAMERA = 1,
+        FIRST_PERSON = 2
+    };
+    CameraMode mCameraMode = SIDE_CAMERA;
+    bool mSwitchCamera = false;
 
     /*!
      * Create new Camera that will generate viewMatrix and projectionMatrix based on its position, up and back vectors
@@ -30,7 +39,7 @@ public:
     /*!
      * Update Camera viewMatrix based on up, position and back vectors
      */
-    void update();
+    void update(Scene &scene);
 };
 
 

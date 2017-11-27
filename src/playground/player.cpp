@@ -36,13 +36,13 @@ bool Player::update(Scene &scene, float dt) {
 
     // === Set directions
     if(scene.keyboard[GLFW_KEY_A]){
-        mDirection.x = PLAYER_SPEED;
-        mRotAngle = (float) (3 * M_PI / 2.0);
+        mDirection.x = -PLAYER_SPEED;
+        mRotAngle = (float) (M_PI / 2.0);
         mOrientation = LEFT;
     }
     else if (scene.keyboard[GLFW_KEY_D]) {
-        mDirection.x = -PLAYER_SPEED;
-        mRotAngle = (float) (M_PI / 2.0);
+        mDirection.x = +PLAYER_SPEED;
+        mRotAngle = (float) (3 * M_PI / 2.0);
         mOrientation = RIGHT;
     }
     else {

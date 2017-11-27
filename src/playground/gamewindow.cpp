@@ -66,5 +66,9 @@ void GameWindow::onKey(int key, int scanCode, int action, int mods) {
     if (key == GLFW_KEY_R && action == GLFW_PRESS){
         initScene();
     }
+    if (key == GLFW_KEY_C && action == GLFW_PRESS) {
+        Camera &c = *mScene.mCamera;
+        c.mSwitchCamera = true;
+    }
 
 }

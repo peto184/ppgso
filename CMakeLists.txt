@@ -103,7 +103,7 @@ target_include_directories(ppgso PUBLIC
 #
 
 # Playground target
-add_executable(playground src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h src/playground/cube.cpp src/playground/cube.h src/playground/scene.cpp src/playground/scene.h src/playground/camera.cpp src/playground/camera.h src/playground/player.cpp src/playground/player.h src/playground/map.cpp src/playground/map.h src/playground/stb_image.h src/playground/background.cpp src/playground/background.h)
+add_executable(playground src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h src/playground/cube.cpp src/playground/cube.h src/playground/scene.cpp src/playground/scene.h src/playground/camera.cpp src/playground/camera.h src/playground/player.cpp src/playground/player.h src/playground/map.cpp src/playground/map.h src/playground/stb_image.h src/playground/background.cpp src/playground/background.h src/playground/projectile.cpp src/playground/projectile.h src/playground/constants.h)
 target_link_libraries(playground ppgso shaders)
 install (TARGETS playground DESTINATION .)
 
