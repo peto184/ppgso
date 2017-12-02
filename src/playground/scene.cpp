@@ -25,6 +25,11 @@ void Scene::loadAssets(){
                     (*mPlayer).mPosition.y = (m.map.size() - i);
                     break;
                 }
+                case Map::Tile::FINISH: {
+                    (*mFinish).mPosition.x = j;
+                    (*mFinish).mPosition.y = (m.map.size() - i);
+                    break;
+                }
                 case Map::Tile::AIR:
                     break;
                 default:
@@ -32,7 +37,6 @@ void Scene::loadAssets(){
             }
         }
     }
-
 }
 
 void Scene::render() {
@@ -45,6 +49,8 @@ void Scene::render() {
     for (auto &c : mCubes) {
         c.render(*this);
     }
+
+    (*mFinish).render(*this);
 
     for (auto &p : mProjectiles) {
         p.render(*this);
@@ -64,6 +70,8 @@ void Scene::update(float dt) {
     for (auto &c : mCubes) {
         c.update(dt);
     }
+
+    (*mFinish).update(dt);
 
     // Update projectiles
     for (auto it = mProjectiles.begin(); it != mProjectiles.end(); ){

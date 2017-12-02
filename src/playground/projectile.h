@@ -12,11 +12,12 @@
 
 class Projectile {
 public:
-    float PROJECTILE_SPEED = 20.0f;
+    float PROJECTILE_SPEED = 25.0f;
     float MAX_AGE = 1.0f;
-    float PROJECTILE_WEIGHT = 5.0f;
+    float PROJECTILE_WEIGHT = 0.05f;
 
     float age = 0.0f;
+    float y_speed = 0.0f;
 
     Projectile(glm::vec3 playerPosition, Orientation orientation);
     Projectile();

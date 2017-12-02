@@ -23,6 +23,9 @@ class Projectile;
 #include <algorithm>
 #include <functional>
 
+class Finish;
+#include "finish.h"
+
 using namespace std;
 using namespace glm;
 using namespace ppgso;
@@ -31,6 +34,7 @@ class Camera;
 
 class Scene {
 public:
+
     std::vector<Cube> mCubes;
     std::vector<Projectile> mProjectiles;
 
@@ -38,11 +42,15 @@ public:
     std::unique_ptr<Background> mBackground;
     std::unique_ptr<Player> mPlayer;
     std::unique_ptr<Map> mMap;
+    std::unique_ptr<Finish> mFinish;
 
     // Keyboard state
     std::map< int, int > keyboard;
 
     Scene();
+
+    bool nextLevel = false;
+    bool resetLevel = false;
 
     void render();
     void update(float dt);

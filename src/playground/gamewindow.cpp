@@ -40,6 +40,9 @@ void GameWindow::initScene(){
     auto background = std::make_unique<Background>();
     mScene.mBackground = move(background);
 
+    auto finish = std::make_unique<Finish>();
+    mScene.mFinish = move(finish);
+
     mScene.loadAssets();
 }
 

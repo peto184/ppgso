@@ -34,6 +34,8 @@ bool Projectile::update(Scene &scene, float dt) {
         }
     }
 
+    y_speed += PROJECTILE_WEIGHT * dt;
+    mPosition.y -= y_speed;
 
     mModelMatrix = glm::translate(mat4(1.0f), mPosition)
                    * glm::rotate(mat4(1.0f), (float) glfwGetTime(), mRotation)

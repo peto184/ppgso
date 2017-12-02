@@ -30,10 +30,12 @@ void Map::loadMap(const string& filepath) {
                     case '=':
                         map.at(i).emplace_back(Map::Tile::BLOCK);
                         break;
-
                     case 'S':
                         map.at(i).emplace_back(Map::Tile::PLAYER);
-
+                        break;
+                    case 'F':
+                        map.at(i).emplace_back(Map::Tile::FINISH);
+                        break;
                     default:
                         break;
                 }
@@ -53,6 +55,9 @@ void Map::loadMap(const string& filepath) {
                     break;
                 case Map::Tile::PLAYER:
                     cout << "S";
+                    break;
+                case Map::Tile::FINISH:
+                    cout << "F";
                     break;
                 default:
                     cout << "?";

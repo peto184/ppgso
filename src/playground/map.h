@@ -15,7 +15,8 @@ public:
     enum Tile {
         PLAYER = 'S',
         AIR = '-',
-        BLOCK = '='
+        BLOCK = '=',
+        FINISH = 'F'
     };
 
     int mapHeight;
