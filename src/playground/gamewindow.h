@@ -25,7 +25,8 @@ public:
     static const unsigned int GAME_WINDOW_WIDTH = 860;
     static const unsigned int GAME_WINDOW_HEIGHT = 640;
 
-    Scene mScene;
+    vector<Scene> scenes;
+    vector<Scene>::iterator currentScene;
 
     explicit GameWindow(const std::string &title = "Super Mario",
                unsigned int width = GAME_WINDOW_WIDTH,
@@ -45,8 +46,6 @@ public:
 private:
 
 protected:
-
-    void initScene();
 };
 
 

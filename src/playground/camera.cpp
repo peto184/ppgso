@@ -6,8 +6,8 @@
 
 Camera::Camera(float fow, float ratio, float near, float far) {
     float fowInRad = ((float)M_PI/180.0f) * fow;
-
     projectionMatrix = glm::perspective(fowInRad, ratio, near, far);
+    mSwitchCamera = false;
 }
 
 void Camera::update(Scene & scene) {

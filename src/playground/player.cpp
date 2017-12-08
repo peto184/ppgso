@@ -13,8 +13,8 @@ std::unique_ptr<ppgso::Shader> Player::mShader;
 std::unique_ptr<ppgso::Texture> Player::mTexture;
 
 Player::Player(){
-    if (!mShader) mShader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
-    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/gold.bmp"));
+    if (!mShader) mShader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+    if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("psyduck/psyduck2.bmp"));
     //if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
 
     if (!mMeshStanding) mMeshStanding = std::make_unique<ppgso::Mesh>("psyduck/psyduck2.obj");
@@ -86,11 +86,19 @@ bool Player::update(Scene &scene, float dt) {
                         * glm::rotate(mat4(1.0f), mRotAngle, mRotation)
                         * glm::scale(mat4(1.0f), mScale);
 
+
+    if (mPosition.y < -10.0){
+        scene.resetLevel = true;
+    }
+
     return true;
 }
 
 void Player::render(Scene &scene) {
     (*mShader).use();
+
+    // Set up light
+    (*mShader).setUniform("LightDirection", {0.0, 1.0, 0.0});
 
     // use mCamera
     (*mShader).setUniform("ProjectionMatrix", (*scene.mCamera).projectionMatrix);

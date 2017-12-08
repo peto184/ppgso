@@ -10,6 +10,8 @@
 #include <string>
 #include <fstream>
 
+using namespace std;
+
 class Map {
 public:
     enum Tile {
@@ -23,6 +25,8 @@ public:
     int mapWidth;
 
     std::vector<std::vector<enum Tile> > map;
+
+    string filepath;
 
     explicit Map(const std::string& filepath);
 

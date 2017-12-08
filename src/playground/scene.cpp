@@ -4,7 +4,29 @@
 
 #include "scene.h"
 
-Scene::Scene() = default;
+Scene::Scene(string mapPath){
+    initScene(mapPath);
+};
+
+void Scene::initScene(string mapPath){
+    // Clear objects
+    mCubes.clear();
+
+    // loadMap
+    mMap = std::make_unique<Map>(mapPath);
+
+    // init scene
+    mCamera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
+
+    mPlayer = std::make_unique<Player>();
+    mBackground = std::make_unique<Background>();
+    mFinish = std::make_unique<Finish>();
+
+    resetLevel = false;
+    nextLevel = false;
+
+    loadAssets();
+}
 
 void Scene::loadAssets(){
     Map& m = *mMap;
@@ -58,7 +80,6 @@ void Scene::render() {
 }
 
 void Scene::update(float dt) {
-
     // Update camera
     (*mCamera).update(*this);
 
@@ -71,7 +92,7 @@ void Scene::update(float dt) {
         c.update(dt);
     }
 
-    (*mFinish).update(dt);
+    (*mFinish).update(*this, dt);
 
     // Update projectiles
     for (auto it = mProjectiles.begin(); it != mProjectiles.end(); ){

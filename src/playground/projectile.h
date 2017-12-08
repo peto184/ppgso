@@ -12,8 +12,8 @@
 
 class Projectile {
 public:
-    float PROJECTILE_SPEED = 25.0f;
-    float MAX_AGE = 1.0f;
+    float PROJECTILE_SPEED = 30.0f;
+    float MAX_AGE = 5.0f;
     float PROJECTILE_WEIGHT = 0.05f;
 
     float age = 0.0f;
@@ -27,6 +27,8 @@ public:
     glm::vec3 mPosition{0.0,0.0,0.0};
     glm::vec3 mRotation{0,1.0,0};
     glm::vec3 mScale{.2,.2,.2};
+
+    glm::vec3 mColor{0.0,0.0,0.0};
 
     glm::mat4 mModelMatrix{1};
 

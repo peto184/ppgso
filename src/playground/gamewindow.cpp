@@ -19,31 +19,11 @@ GameWindow::GameWindow(const std::string &title, unsigned int width, unsigned in
     glFrontFace(GL_CCW);
     glCullFace(GL_BACK);
 
-    initScene();
-}
+    scenes.emplace_back(Scene("levels/map1"));
+    scenes.emplace_back(Scene("levels/map2"));
+    scenes.emplace_back(Scene("levels/map3"));
 
-void GameWindow::initScene(){
-    // Clear objects
-    mScene.mCubes.clear();
-
-    // loadMap
-    auto map = std::make_unique<Map>("map1");
-    mScene.mMap = move(map);
-
-    // init scene
-    auto camera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
-    mScene.mCamera = move(camera);
-
-    auto player = std::make_unique<Player>();
-    mScene.mPlayer = move(player);
-
-    auto background = std::make_unique<Background>();
-    mScene.mBackground = move(background);
-
-    auto finish = std::make_unique<Finish>();
-    mScene.mFinish = move(finish);
-
-    mScene.loadAssets();
+    currentScene = scenes.begin();
 }
 
 void GameWindow::onIdle() {
@@ -59,19 +39,42 @@ void GameWindow::onIdle() {
     float dt = (float) glfwGetTime() - time;
     time = (float) glfwGetTime();
 
-    mScene.update(dt);
-    mScene.render();
+    currentScene->update(dt);
+    currentScene->render();
+
+    // IF R was pressed
+    if (currentScene->resetLevel){
+        currentScene->initScene(currentScene->mMap->filepath);
+        currentScene->resetLevel = false;
+    }
+
+    bool reset = false;
+    if (currentScene->nextLevel){
+        if(currentScene == scenes.end()){
+            reset = true;
+        }
+        else {
+            currentScene++;
+        }
+    }
+
+    if (reset){
+        for(Scene &s : scenes){
+            s.initScene(s.mMap->filepath);
+        }
+        currentScene = scenes.begin();
+    }
+
 }
 
 void GameWindow::onKey(int key, int scanCode, int action, int mods) {
-    mScene.keyboard[key] = action;
+    currentScene->keyboard[key] = action;
 
     if (key == GLFW_KEY_R && action == GLFW_PRESS){
-        initScene();
+        currentScene->resetLevel = true;
     }
     if (key == GLFW_KEY_C && action == GLFW_PRESS) {
-        Camera &c = *mScene.mCamera;
-        c.mSwitchCamera = true;
+        currentScene->mCamera->mSwitchCamera = true;
     }
 
 }

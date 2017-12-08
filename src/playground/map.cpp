@@ -7,6 +7,7 @@
 using namespace std;
 
 Map::Map(const string& filepath) {
+    this->filepath = filepath;
     loadMap(filepath);
 }
 
@@ -43,6 +44,7 @@ void Map::loadMap(const string& filepath) {
         }
     }
 
+    cout << "Map: " << filepath << endl;
     // Print map to std out
     for (auto v : map){
         for (auto w : v){
@@ -67,4 +69,5 @@ void Map::loadMap(const string& filepath) {
         cout << endl;
     }
 
+    tileMap.close();
 }

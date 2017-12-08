@@ -47,7 +47,7 @@ public:
     // Keyboard state
     std::map< int, int > keyboard;
 
-    Scene();
+    Scene(string mapPath);
 
     bool nextLevel = false;
     bool resetLevel = false;
@@ -55,6 +55,7 @@ public:
     void render();
     void update(float dt);
     void loadAssets();
+    void initScene(string mapPath);
 
 };
 
