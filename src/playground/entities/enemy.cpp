@@ -16,14 +16,27 @@ Enemy::Enemy() {
     if (!mShader) mShader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
     if (!mTexture) mTexture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("blocks/redstone.bmp"));
     if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Santa Claus/Santa Claus.obj");
+
+    mRotAngle = (float) (3 * M_PI / 2.0);
+    mHealth = MAX_HEALTH;
+    mOrientation = Orientation ::LEFT;
+
+    mPosition = {0.0, 1.0, 0.0};
+    mScale = {1.0, 1.0, 1.0};
+    mDirection = {0.0, 0.0, 0.0};
+    mRotation = {0.0, 1.0, 0.0};
 }
 
 bool Enemy::update(Scene &scene, float time) {
+    if (mHealth <= 0){
+        return false;
+    }
+
     mModelMatrix = glm::translate(glm::mat4(1.0f), mPosition)
-                   * glm::rotate(glm::mat4(1.0f), 0.0f, mRotation)
+                   * glm::rotate(mat4(1.0f), mRotAngle, mRotation)
                    * glm::scale(glm::mat4(1.0f), mScale);
 
-    return false;
+    return true;
 }
 
 void Enemy::render(Scene &scene) {

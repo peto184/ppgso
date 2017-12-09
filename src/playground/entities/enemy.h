@@ -5,19 +5,20 @@
 #ifndef PPGSO_ENEMY_H
 #define PPGSO_ENEMY_H
 
-#include <ppgso.h>
+#include "src/playground/scene.h"
 
-#include "object.h"
-#include "movable.h"
-
-class Enemy final : public Object, public Movable {
+class Enemy : public Object {
 public:
     Enemy();
+    Enemy(const Enemy&) = default;
+    Enemy(Enemy&&) = default;
 
     bool update(Scene &scene, float time) override;
     void render(Scene &scene) override;
 
-private:
+    static const int MAX_HEALTH = 50;
+    int mHealth;
+
     static std::unique_ptr<ppgso::Mesh> mMesh;
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;

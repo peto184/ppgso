@@ -32,7 +32,7 @@ void Finish::render(Scene &scene) {
     (*mShader).use();
 
     vec3 playerPos = scene.mPlayer->mPosition;
-    vec3 lightDir = {sin(glfwGetTime()) * 3.0, cos(glfwGetTime() * 2.1) * 3.0, 1};
+    //vec3 lightDir = {sin(glfwGetTime()) * 3.0, cos(glfwGetTime() * 2.1) * 3.0, 1};
 
     // Set up light
     (*mShader).setUniform("LightDirection", playerPos);

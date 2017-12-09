@@ -8,7 +8,7 @@
 #include <memory>
 #include <glm/glm.hpp>
 #include <ppgso/ppgso.h>
-#include "player.h"
+#include "src/playground/entities/player.h"
 
 class Player;
 class Camera {

@@ -5,13 +5,13 @@
 #ifndef PPGSO_SCENE_H
 #define PPGSO_SCENE_H
 
-#include "cube.h"
+#include "src/playground/entities/cube.h"
 class Cube;
 
 #include "camera.h"
 class Camera;
 
-#include "player.h"
+#include "src/playground/entities/player.h"
 class Player;
 
 #include "map.h"
@@ -20,7 +20,7 @@ class Map;
 #include "background.h"
 class Background;
 
-#include "projectile.h"
+#include "src/playground/entities/projectile.h"
 class Projectile;
 
 #include "finish.h"
@@ -34,6 +34,7 @@ class Enemy;
 
 #include <glm/glm.hpp>
 #include <functional>
+#include <list>
 
 
 using namespace std;
@@ -44,8 +45,9 @@ class Scene {
 public:
 
     std::vector<Cube> mCubes;
-    std::vector<Projectile> mProjectiles;
-    std::vector<Enemy> mEnemies;
+
+    std::vector<std::unique_ptr<Projectile> > mProjectiles;
+    std::vector<std::unique_ptr<Enemy> > mEnemies;
 
     std::unique_ptr<Camera> mCamera;
     std::unique_ptr<Background> mBackground;

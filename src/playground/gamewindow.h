@@ -8,7 +8,7 @@
 #include <glm/glm.hpp>
 #include <ppgso/ppgso.h>
 
-#include "cube.h"
+#include "src/playground/entities/cube.h"
 #include "scene.h"
 #include "map.h"
 

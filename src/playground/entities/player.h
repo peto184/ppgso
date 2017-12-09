@@ -7,11 +7,14 @@
 #define PPGSO_PLAYER_H
 
 #include <ppgso/ppgso.h>
-#include "constants.h"
-#include "scene.h"
+
+#include "object.h"
+
+#include "src/playground/constants.h"
+#include "src/playground/scene.h"
 #include "projectile.h"
 
-class Player final {
+class Player final : public Object{
 public:
     Player();
 
@@ -20,26 +23,14 @@ public:
         PLAYER_ON_GROUND
     };
 
-    const float PLAYER_SPEED = 5.0f;
-    const float PLAYER_JUMP_STRENGTH = 10.0f;
-    const float PLAYER_GRAVITY = 15.0f;
 
     const float RELOAD_TIME = 0.0000001f;
     float mReload = 0.0;
 
-    glm::vec3 mPosition{0.0,1.0,0};
-    glm::vec3 mRotation{0,1.0,0};
-    float mRotAngle = (float) (3 * M_PI / 2.0);
-    glm::vec3 mScale{1.0,1.0,1.0};
-
-    glm::mat4 mModelMatrix{1};
-
-    glm::vec3 mDirection{0.0,0.0,0.0};
     enum State mPlayerState = PLAYER_ON_GROUND;
-    enum Orientation mOrientation;
 
-    bool update(Scene& scene, float dt);
-    void render(Scene &scene);
+    bool update(Scene& scene, float dt) override;
+    void render(Scene &scene) override;
 
 private:
     static ppgso::Mesh *mMesh;
@@ -49,8 +40,6 @@ private:
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;
 
-    bool checkCollisionY(Cube &c);
-    bool checkCollisionX(Cube &c);
 };
 
 

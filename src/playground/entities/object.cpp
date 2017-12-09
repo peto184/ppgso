@@ -4,10 +4,10 @@
 
 #include "object.h"
 
-bool Object::checkCollisionY(Object& o){
-    return mPosition.y >= o.mPosition.y && o.mPosition.y + o.mScale.y >= mPosition.y;
+bool Object::checkCollisionY(Object& o1, Object& o2){
+    return o1.mPosition.y >= o2.mPosition.y && o2.mPosition.y + o2.mScale.y >= o1.mPosition.y;
 }
 
-bool Object::checkCollisionX(Object& o){
-    return mPosition.x + mScale.x >= o.mPosition.x && o.mPosition.x + o.mScale.x >= mPosition.x;
+bool Object::checkCollisionX(Object& o1, Object& o2){
+    return o1.mPosition.x + o1.mScale.x >= o2.mPosition.x && o2.mPosition.x + o2.mScale.x >= o1.mPosition.x;
 }

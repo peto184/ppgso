@@ -22,26 +22,22 @@ Player::Player(){
     if (!mMesh) mMesh = mMeshStanding.get();
 
     mOrientation = RIGHT;
-}
-
-bool Player::checkCollisionY(Cube& c){
-    return mPosition.y >= c.mPosition.y && c.mPosition.y + c.mScale.y >= mPosition.y;
-}
-
-bool Player::checkCollisionX(Cube& c){
-    return mPosition.x + mScale.x >= c.mPosition.x && c.mPosition.x + c.mScale.x >= mPosition.x;
+    mPosition = {0.0, 1.0, 0.0};
+    mScale = {1.0, 1.0, 1.0};
+    mDirection = {0.0, 0.0, 0.0};
+    mRotation = {0.0, 1.0, 0.0};
 }
 
 bool Player::update(Scene &scene, float dt) {
 
     // === Set directions
     if(scene.keyboard[GLFW_KEY_A]){
-        mDirection.x = -PLAYER_SPEED;
+        mDirection.x = -SPEED;
         mRotAngle = (float) (M_PI / 2.0);
         mOrientation = LEFT;
     }
     else if (scene.keyboard[GLFW_KEY_D]) {
-        mDirection.x = +PLAYER_SPEED;
+        mDirection.x = +SPEED;
         mRotAngle = (float) (3 * M_PI / 2.0);
         mOrientation = RIGHT;
     }
@@ -49,13 +45,14 @@ bool Player::update(Scene &scene, float dt) {
         mDirection.x = 0;
     }
     if (scene.keyboard[GLFW_KEY_W] && mPlayerState == PLAYER_ON_GROUND){
-        mDirection.y = PLAYER_JUMP_STRENGTH;
+        mDirection.y = JUMP_STRENGHT;
         mPlayerState = PLAYER_IN_AIR;
         mMesh = mMeshJumping.get();
     }
 
     if (scene.keyboard[GLFW_KEY_SPACE] && mReload > RELOAD_TIME){
-        scene.mProjectiles.emplace_back(Projectile{this->mPosition, this->mOrientation});
+        auto p = make_unique<Projectile>(this->mPosition, this->mOrientation);
+        scene.mProjectiles.push_back(move(p));
         mReload = 0.0f;
     }
 
@@ -63,12 +60,14 @@ bool Player::update(Scene &scene, float dt) {
         mReload += dt;
 
     // Gravity
-    if (mDirection.y > -PLAYER_GRAVITY)
-        mDirection.y -= PLAYER_GRAVITY*dt;
+    if (mDirection.y > -GRAVITY)
+        mDirection.y -= GRAVITY*dt;
 
-    for (Cube c : scene.mCubes) {
+    for (Cube &c : scene.mCubes) {
         // Check collision only if player is falling
-        if (checkCollisionY(c) && checkCollisionX(c) && mDirection.y < 0) {
+        vec3 dist(glm::distance(mPosition, c.mPosition));
+
+        if (dist.y < c.mScale.y && dist.x < c.mScale.x && mDirection.y < 0) {
             mPosition.y = c.mPosition.y + c.mScale.y/2.0f;
 
             if (mDirection.y < 0.0)
@@ -79,6 +78,16 @@ bool Player::update(Scene &scene, float dt) {
             break;
         }
     }
+
+    for (auto &e : scene.mEnemies){
+        vec3 dist(glm::distance(mPosition, e->mPosition));
+        if (dist.y < e->mScale.y && dist.x < e->mScale.x){
+            scene.resetLevel = true;
+        }
+    }
+
+
+    //cout << mPosition.x << "\t" << mPosition.y << "\t" << mDirection.y << endl;
 
     // Move from position by direction in dt
     mPosition = mPosition + (mDirection*dt);

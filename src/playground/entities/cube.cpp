@@ -2,6 +2,7 @@
 // Created by peto184 on 24-Oct-17.
 //
 #include "cube.h"
+#include "src/playground/scene.h"
 
 std::unique_ptr<ppgso::Mesh> Cube::mMesh;
 std::unique_ptr<ppgso::Shader> Cube::mShader;
@@ -14,11 +15,10 @@ Cube::Cube(){
     if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("cube.obj");
 }
 
-bool Cube::update(float time) {
-    mModelMatrix = glm::scale(mat4(1.0f), mScale);
+bool Cube::update(Scene &scene, float time) {
+    mModelMatrix = glm::scale(glm::mat4(1.0f), mScale);
     mModelMatrix = glm::translate(mModelMatrix, mPosition);
     mModelMatrix = glm::rotate(mModelMatrix, 0.0f, mRotation);
-    //generateModelMatrix();
 
     return true;
 }
@@ -34,10 +34,4 @@ void Cube::render(Scene &scene) {
     (*mShader).setUniform("ModelMatrix", mModelMatrix);
     (*mShader).setUniform("Texture", *mTexture);
     (*mMesh).render();
-}
-
-void Cube::generateModelMatrix() {
-    mModelMatrix = glm::translate(mat4{1.0f}, mPosition)
-            * glm::orientate4(mRotation)
-            * glm::scale(mat4(1.0f), mScale);
 }

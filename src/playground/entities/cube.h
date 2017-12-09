@@ -9,18 +9,15 @@
 #include <cmake-build-debug/shaders/texture_frag_glsl.h>
 #include <cmake-build-debug/shaders/texture_vert_glsl.h>
 
-#include <glm/gtx/euler_angles.hpp>
+#include "object.h"
 
 class Scene;
-#include "scene.h"
 
-class Cube {
+class Cube : public Object {
 private:
     static std::unique_ptr<ppgso::Mesh> mMesh;
     static std::unique_ptr<ppgso::Shader> mShader;
     static std::unique_ptr<ppgso::Texture> mTexture;
-
-    void generateModelMatrix();
 
 public:
     Cube();
@@ -30,8 +27,8 @@ public:
     glm::vec3 mScale{1,1,1};
     glm::mat4 mModelMatrix{1};
 
-    bool update(float time);
-    void render(Scene &scene);
+    bool update(Scene& scene, float dt) override;
+    void render(Scene &scene) override;
 };
 
 

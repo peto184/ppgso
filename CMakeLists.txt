@@ -97,6 +97,13 @@ target_include_directories(ppgso PUBLIC
         ${CMAKE_SOURCE_DIR}
         ${CMAKE_CURRENT_BINARY_DIR})
 
+
+
+# IRRKLANG
+
+INCLUDE_DIRECTORIES(libs/irrKlang-64bit-1.5.0/include)
+LINK_DIRECTORIES(libs/irrKlang-64bit-1.5.0/bin/winx64-visualStudio)
+
 #
 # TARGETS
 #
@@ -105,20 +112,21 @@ target_include_directories(ppgso PUBLIC
 add_executable(playground
         src/playground/entities/object.cpp src/playground/entities/object.h
         src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h
-        src/playground/cube.cpp src/playground/cube.h
+        src/playground/entities/cube.cpp src/playground/entities/cube.h
         src/playground/scene.cpp src/playground/scene.h
         src/playground/camera.cpp src/playground/camera.h
-        src/playground/player.cpp src/playground/player.h
+        src/playground/entities/player.cpp src/playground/entities/player.h
         src/playground/map.cpp src/playground/map.h
         ppgso/stb_image.h
         src/playground/background.cpp src/playground/background.h
-        src/playground/projectile.cpp src/playground/projectile.h
+        src/playground/entities/projectile.cpp src/playground/entities/projectile.h
         src/playground/constants.h
         src/playground/finish.cpp src/playground/finish.h
         src/playground/entities/enemy.cpp src/playground/entities/enemy.h
-        src/playground/entities/movable.h)
+        )
 
 target_link_libraries(playground ppgso shaders)
+
 install (TARGETS playground DESTINATION .)
 
 #

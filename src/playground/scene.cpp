@@ -11,6 +11,8 @@ Scene::Scene(string mapPath){
 void Scene::initScene(string mapPath){
     // Clear objects
     mCubes.clear();
+    mEnemies.clear();
+    mProjectiles.clear();
 
     // loadMap
     mMap = std::make_unique<Map>(mapPath);
@@ -39,7 +41,7 @@ void Scene::loadAssets(){
 
                     cube.mPosition.x = (float) (j);
                     cube.mPosition.y = (float) (m.map.size() - i);
-                    mCubes.emplace_back(cube);
+                    mCubes.push_back(cube);
                     break;
                 }
                 case Map::Tile::PLAYER: {
@@ -53,12 +55,11 @@ void Scene::loadAssets(){
                     break;
                 }
                 case Map::Tile::ENEMY: {
-                    Enemy e;
+                    auto e = make_unique<Enemy>();
 
-                    e.mPosition.x = (float) (j);
-                    e.mPosition.y = (float) (m.map.size() - i);
-                    mEnemies.emplace_back(e);
-
+                    e->mPosition.x = (float) (j);
+                    e->mPosition.y = (float) (m.map.size() - i);
+                    mEnemies.push_back(move(e));
                     break;
                 }
                 case Map::Tile::AIR:
@@ -82,13 +83,13 @@ void Scene::render() {
     }
 
     for (auto &e : mEnemies){
-        e.render(*this);
+        e->render(*this);
     }
 
     (*mFinish).render(*this);
 
     for (auto &p : mProjectiles) {
-        p.render(*this);
+        p->render(*this);
     }
 }
 
@@ -102,22 +103,39 @@ void Scene::update(float dt) {
 
     // Update cubes
     for (auto &c : mCubes) {
-        c.update(dt);
+        c.update(*this, dt);
     }
 
     for (auto &e : mEnemies){
-        e.update(*this, dt);
+        e->update(*this, dt);
     }
 
     (*mFinish).update(*this, dt);
 
+    //cout << "Projectiles: " << mProjectiles.size() << " Cubes: " << mCubes.size() << endl;
+
+    // Update enemies
+    for (auto it = mEnemies.begin(); it != mEnemies.end(); ){
+        auto obj = it->get();
+
+        if (!obj->update(*this, dt)) {
+            it = mEnemies.erase(it);
+        } else {
+            ++it;
+        }
+    }
+
+
     // Update projectiles
     for (auto it = mProjectiles.begin(); it != mProjectiles.end(); ){
-        if (!it->update(*this, dt)) {
+        auto obj = it->get();
+
+        if (!obj->update(*this, dt)) {
             it = mProjectiles.erase(it);
         } else {
             ++it;
         }
     }
+
 
 }
