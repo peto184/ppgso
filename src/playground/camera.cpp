@@ -22,12 +22,14 @@ void Camera::update(Scene & scene) {
     switch (mCameraMode) {
         case SIDE_CAMERA:
             this->position.z = +15.0f;
-            viewMatrix = lookAt(position, p.mPosition, up);
+            target = p.mPosition;
+            viewMatrix = lookAt(position, target, up);
             break;
         case BEHIND_CAMERA:
+            target = p.mPosition;
             this->position.x -= 10.0f;
             this->position.y += 5.0f;
-            viewMatrix = lookAt(position, p.mPosition, up);
+            viewMatrix = lookAt(position, target, up);
             break;
         case FIRST_PERSON:
             if (p.mOrientation == LEFT)

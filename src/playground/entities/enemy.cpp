@@ -21,17 +21,34 @@ Enemy::Enemy() {
     mHealth = MAX_HEALTH;
     mOrientation = Orientation ::LEFT;
 
-    mPosition = {0.0, 1.0, 0.0};
-    mScale = {1.0, 1.0, 1.0};
+    mPosition = {0.0, 0.0, 0.0};
+    mScale = {1.5, 2.5, 1.5};
     mDirection = {0.0, 0.0, 0.0};
     mRotation = {0.0, 1.0, 0.0};
 }
 
-bool Enemy::update(Scene &scene, float time) {
+bool Enemy::update(Scene &scene, float dt) {
     if (mHealth <= 0){
         return false;
     }
 
+    mDirection.y -= GRAVITY*dt;
+
+    for (Cube &c : scene.mCubes) {
+        // Check collision only if player is falling
+        vec3 dist(glm::distance(mPosition, c.mPosition));
+
+        if (dist.y < c.mScale.y && dist.x < c.mScale.x && mDirection.y < 0) {
+            mPosition.y = c.mPosition.y + c.mScale.y/2.0f;
+
+            if (mDirection.y < 0.0)
+                mDirection.y = 0.0f;
+
+            break;
+        }
+    }
+
+    mPosition = mPosition + (mDirection*dt);
     mModelMatrix = glm::translate(glm::mat4(1.0f), mPosition)
                    * glm::rotate(mat4(1.0f), mRotAngle, mRotation)
                    * glm::scale(glm::mat4(1.0f), mScale);

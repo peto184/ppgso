@@ -24,7 +24,7 @@ public:
     };
 
 
-    const float RELOAD_TIME = 0.0000001f;
+    const float RELOAD_TIME = 1.0f;
     float mReload = 0.0;
 
     enum State mPlayerState = PLAYER_ON_GROUND;

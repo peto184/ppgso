@@ -13,10 +13,10 @@ public:
     Enemy(const Enemy&) = default;
     Enemy(Enemy&&) = default;
 
-    bool update(Scene &scene, float time) override;
+    bool update(Scene &scene, float dt) override;
     void render(Scene &scene) override;
 
-    static const int MAX_HEALTH = 50;
+    static const int MAX_HEALTH = 1;
     int mHealth;
 
     static std::unique_ptr<ppgso::Mesh> mMesh;

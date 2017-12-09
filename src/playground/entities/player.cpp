@@ -18,7 +18,7 @@ Player::Player(){
     //if (!mMesh) mMesh = std::make_unique<ppgso::Mesh>("Arnold_T-850/arnold_jumping.obj");
 
     if (!mMeshStanding) mMeshStanding = std::make_unique<ppgso::Mesh>("psyduck/psyduck2.obj");
-    if (!mMeshJumping) mMeshJumping = std::make_unique<ppgso::Mesh>("psyduck/psyduck2.obj");
+    if (!mMeshJumping) mMeshJumping = std::make_unique<ppgso::Mesh>("psyduck/psyduck1.obj");
     if (!mMesh) mMesh = mMeshStanding.get();
 
     mOrientation = RIGHT;
