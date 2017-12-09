@@ -5,38 +5,47 @@
 #ifndef PPGSO_SCENE_H
 #define PPGSO_SCENE_H
 
-class Cube;
 #include "cube.h"
+class Cube;
+
 #include "camera.h"
+class Camera;
 
-class Player;
 #include "player.h"
+class Player;
+
 #include "map.h"
+class Map;
 
-class Background;
 #include "background.h"
+class Background;
 
-class Projectile;
 #include "projectile.h"
+class Projectile;
+
+#include "finish.h"
+class Finish;
+
+#include "src/playground/entities/object.h"
+class Object;
+
+#include "src/playground/entities/enemy.h"
+class Enemy;
 
 #include <glm/glm.hpp>
-#include <algorithm>
 #include <functional>
 
-class Finish;
-#include "finish.h"
 
 using namespace std;
 using namespace glm;
 using namespace ppgso;
-
-class Camera;
 
 class Scene {
 public:
 
     std::vector<Cube> mCubes;
     std::vector<Projectile> mProjectiles;
+    std::vector<Enemy> mEnemies;
 
     std::unique_ptr<Camera> mCamera;
     std::unique_ptr<Background> mBackground;

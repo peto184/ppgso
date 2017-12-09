@@ -67,7 +67,6 @@ set(PPGSO_SHADER_SRC
         shader/convolution_vert.glsl shader/convolution_frag.glsl
         shader/diffuse_vert.glsl shader/diffuse_frag.glsl
         shader/texture_vert.glsl shader/texture_frag.glsl
-        shader/skybox_vert.glsl shader/skybox_frag.glsl
         )
 add_resources(shaders ${PPGSO_SHADER_SRC})
 
@@ -103,7 +102,22 @@ target_include_directories(ppgso PUBLIC
 #
 
 # Playground target
-add_executable(playground src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h src/playground/cube.cpp src/playground/cube.h src/playground/scene.cpp src/playground/scene.h src/playground/camera.cpp src/playground/camera.h src/playground/player.cpp src/playground/player.h src/playground/map.cpp src/playground/map.h ppgso/stb_image.h src/playground/background.cpp src/playground/background.h src/playground/projectile.cpp src/playground/projectile.h src/playground/constants.h src/playground/finish.cpp src/playground/finish.h src/playground/enemy.cpp src/playground/enemy.h)
+add_executable(playground
+        src/playground/entities/object.cpp src/playground/entities/object.h
+        src/playground/main.cpp src/playground/gamewindow.cpp src/playground/gamewindow.h
+        src/playground/cube.cpp src/playground/cube.h
+        src/playground/scene.cpp src/playground/scene.h
+        src/playground/camera.cpp src/playground/camera.h
+        src/playground/player.cpp src/playground/player.h
+        src/playground/map.cpp src/playground/map.h
+        ppgso/stb_image.h
+        src/playground/background.cpp src/playground/background.h
+        src/playground/projectile.cpp src/playground/projectile.h
+        src/playground/constants.h
+        src/playground/finish.cpp src/playground/finish.h
+        src/playground/entities/enemy.cpp src/playground/entities/enemy.h
+        src/playground/entities/movable.h)
+
 target_link_libraries(playground ppgso shaders)
 install (TARGETS playground DESTINATION .)
 

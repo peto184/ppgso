@@ -16,6 +16,7 @@ class Map {
 public:
     enum Tile {
         PLAYER = 'S',
+        ENEMY = 'E',
         AIR = '-',
         BLOCK = '=',
         FINISH = 'F'

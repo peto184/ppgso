@@ -52,6 +52,15 @@ void Scene::loadAssets(){
                     (*mFinish).mPosition.y = (m.map.size() - i);
                     break;
                 }
+                case Map::Tile::ENEMY: {
+                    Enemy e;
+
+                    e.mPosition.x = (float) (j);
+                    e.mPosition.y = (float) (m.map.size() - i);
+                    mEnemies.emplace_back(e);
+
+                    break;
+                }
                 case Map::Tile::AIR:
                     break;
                 default:
@@ -72,6 +81,10 @@ void Scene::render() {
         c.render(*this);
     }
 
+    for (auto &e : mEnemies){
+        e.render(*this);
+    }
+
     (*mFinish).render(*this);
 
     for (auto &p : mProjectiles) {
@@ -90,6 +103,10 @@ void Scene::update(float dt) {
     // Update cubes
     for (auto &c : mCubes) {
         c.update(dt);
+    }
+
+    for (auto &e : mEnemies){
+        e.update(*this, dt);
     }
 
     (*mFinish).update(*this, dt);

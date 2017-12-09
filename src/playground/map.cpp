@@ -37,6 +37,9 @@ void Map::loadMap(const string& filepath) {
                     case 'F':
                         map.at(i).emplace_back(Map::Tile::FINISH);
                         break;
+                    case 'E':
+                        map.at(i).emplace_back(Map::Tile::ENEMY);
+                        break;
                     default:
                         break;
                 }
@@ -57,6 +60,9 @@ void Map::loadMap(const string& filepath) {
                     break;
                 case Map::Tile::PLAYER:
                     cout << "S";
+                    break;
+                case Map::Tile::ENEMY:
+                    cout << "E";
                     break;
                 case Map::Tile::FINISH:
                     cout << "F";
